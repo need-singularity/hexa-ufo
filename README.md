@@ -1,4 +1,4 @@
-# hexa-ufo — UFO Substrate Atlas + 7-stage Propulsion
+# 🛸 hexa-ufo — UFO Substrate Atlas + 7-stage Propulsion
 
 > 6-verb UFO substrate atlas organized around a **7-stage propulsion stack**:
 > Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter (substrate-grounded
