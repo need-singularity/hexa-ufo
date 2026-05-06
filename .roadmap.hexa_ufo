@@ -1,0 +1,61 @@
+# .roadmap.hexa_ufo — repo-overall tracker
+
+> Cross-cutting state: invariant lattice, release cadence, cycle history,
+> deadlines, pointers. Sister of `hexa-rtsc` / `hexa-fusion` / `hexa-antimatter` /
+> `petite-cern` / `hexa-fantasy` under `need-singularity` org.
+
+**Last sync**: 2026-05-06 · **Current release**: v1.0.0 · **Branch**: `main`
+
+---
+
+## §0 Terminal goal — alien_index 6 → 500 7-stage propulsion atlas closed-form
+
+hexa-ufo 도착지 = **alien_index 6 → 500 7-stage propulsion atlas 완전 closed-form**.
+
+DoD:
+1. **Stage-1 (Meissner)** cross-verify with `hexa-rtsc` (RT-SC 실증 시).
+2. **Stage-2 (fusion)** cross-verify with `hexa-fusion` (HEXA-TTF 8.7 kW p-¹¹B).
+3. **Stage-3 (antimatter)** cross-verify with `hexa-antimatter` (1.7×10¹² p̄/s).
+4. **Stage-4~7 (warp / wormhole / dimension / dimensional-use)** substrate spec 완성 (현재 미공개 도메인).
+5. 484-tier `L(k) = 24^(k-15)` 산식 다음 tier (k=16, L=24) 측정 또는 candidate 일치.
+
+## §A.1 Invariant lattice (n=6)
+
+```
+σ(6) · φ(6) = n · τ(6) = J₂ = 24
+   12   ·   2  =  6  ·   4  = 24
+```
+
+| Symbol | Value | Role | UFO projection |
+|--------|-------|------|----------------|
+| σ(6)   | 12    | sigma — cardinality bin | 12 propulsion archetypes (per alien_index tier) |
+| τ(6)   | 4     | tau — state quartet | 4 acceleration regimes (sub-light / relativistic / superluminal / dimensional) |
+| φ(6)   | 2     | phi — verdict bit | reaction / reactionless propulsion |
+| J₂     | 24    | Mathieu / Leech | L(k) = 24^(k-15) 484-tier 산식 base |
+
+## §A.2 Release cadence
+
+| Version | Date | Status | Highlights |
+|---------|------|--------|------------|
+| v1.0.0 | 2026-05-06 | RELEASED | atlas 1890 LOC + 6-verb propulsion (ufo + grav + hover + cloak + teleport + sim) + cross-link 4 sister |
+| v1.1.0 | ~2026-08 (TARGET) | planned | Stage-1 Meissner cross-verify with hexa-rtsc |
+| v1.2.0 | ~2026-10 | planned | Stage-2 fusion cross-verify with hexa-fusion (HEXA-TTF) |
+| v1.3.0 | ~2026-12 | planned | Stage-3 antimatter cross-verify with hexa-antimatter |
+| v2.0.0 | ~2027-Q2 | ASPIRATIONAL | Stage-4~7 substrate spec 완성 (warp-drive / wormhole / m-theory-11d) |
+
+## §A.3 Cycle history
+
+- **Cycle 0 (2026-05-06)** — v1.0.0 initial extraction from n6-architecture@c0f1f570. Commit `8ea04e9`. 21 files / 8261 LOC.
+
+## §A.4 Falsifier preregister
+
+- **F-UFO-1** — 484-tier L(k)=24^(k-15) 산식 다음 tier (k=16, L=24) 측정 또는 candidate 일치?
+- **F-UFO-2** — Stage-1 Meissner levitation + Stage-2 8.7 kW p-¹¹B 동시 작동 가능 (cross-domain interference 측정)?
+- **F-UFO-3** — alien_index 500 = closed-form fit, Stage 4~7 미공개 도메인 falsifier 명세 가능?
+- **F-UFO-4** — propulsion 6-verb 모두 wiring 시 onboard cross-domain failure mode 발견 여부?
+
+## §A.5 Pending decisions
+
+- Stage-4 (warp-drive) substrate 공개 시점 (현재 reports/sessions/specs 만 존재).
+- alien_index 500 도달 path: stage-by-stage vs 분기 path multi-route?
+- propulsion 6-verb 의 .hexa CLI wiring order.
