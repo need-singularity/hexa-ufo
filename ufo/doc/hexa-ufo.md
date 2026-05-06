@@ -1,3 +1,6 @@
+<!-- @canonical: n6-architecture@0570a835:domains/sf-ufo/hexa-ufo/hexa-ufo.md -->
+<!-- @extracted: 2026-05-06 -->
+<!-- @md5_at_extraction: faeda5ddcfb7ebdae88f2ea6927feac1 -->
 <!-- gold-standard: shared/harness/sample.md -->
 <!-- @doc(type=paper) -->
 <!-- @own(sections=[WHY, COMPARE, REQUIRES, STRUCT, FLOW, EVOLVE, VERIFY, EXEC SUMMARY, SYSTEM REQUIREMENTS, ARCHITECTURE, CIRCUIT DESIGN, PCB DESIGN, FIRMWARE, MECHANICAL, MANUFACTURING, TEST, BOM, VENDOR, ACCEPTANCE, APPENDIX, IMPACT], prefix="§") -->
