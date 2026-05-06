@@ -16,7 +16,7 @@ versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   lattice arithmetic sanity.
 - `examples/propulsion_stack.md` — 7-stage evolution table.
 - Cross-link table to 4 sister substrate repos (`hexa-rtsc`, `hexa-fusion`,
-  `hexa-antimatter`, `petite-cern`).
+  `hexa-antimatter`, `hexa-cern`).
 - `install.hexa` hx hook (pre/post selftest).
 - Auxiliary docs: `cross-domain-mega/`, `hypotheses/`, `experiments/`,
   `rtsc-12-products-evolution/`.

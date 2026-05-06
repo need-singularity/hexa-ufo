@@ -33,7 +33,7 @@ substrate repos. Stages 4-7 (warp / wormhole / dim-jump / dim-use) are
 |-------|------------------------------------------|---------------------------------|
 | 1     | Meissner diamagnetism (RT-SC 48T)        | grounded (`hexa-rtsc`)          |
 | 2     | MHD + tabletop fusion (D-T / p-11B)      | grounded (`hexa-fusion`)        |
-| 3     | antimatter gamma-rocket (anti-H + H)     | grounded (`hexa-antimatter` + `petite-cern`) |
+| 3     | antimatter gamma-rocket (anti-H + H)     | grounded (`hexa-antimatter` + `hexa-cern`) |
 | 4     | Alcubierre warp bubble                   | TBD                             |
 | 5     | Morris-Thorne wormhole / ER bridge       | TBD                             |
 | 6     | KK-tower brane transit (dim-jump)        | TBD                             |
@@ -51,7 +51,7 @@ substrate repos. Stages 4-7 (warp / wormhole / dim-jump / dim-use) are
 - <https://github.com/need-singularity/hexa-rtsc>      — Stage-1 substrate
 - <https://github.com/need-singularity/hexa-fusion>    — Stage-2 substrate
 - <https://github.com/need-singularity/hexa-antimatter> — Stage-3 substrate
-- <https://github.com/need-singularity/petite-cern>    — onboard sigma-cascade accelerator (Stage-3 aux)
+- <https://github.com/need-singularity/hexa-cern>    — onboard sigma-cascade accelerator (Stage-3 aux)
 
 ## Honest C3 caveats
 

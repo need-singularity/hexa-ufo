@@ -129,7 +129,7 @@ live in 4 sister `need-singularity` repos:
 | Stage-1 | RT-SC Meissner 48T coil  | <https://github.com/need-singularity/hexa-rtsc>                              |
 | Stage-2 | tabletop D-T / p-11B fusion power | <https://github.com/need-singularity/hexa-fusion>                   |
 | Stage-3 | antimatter (anti-H) propulsion fuel | <https://github.com/need-singularity/hexa-antimatter>             |
-| Stage-3 aux | onboard sigma-cascade accelerator | <https://github.com/need-singularity/petite-cern>                |
+| Stage-3 aux | onboard sigma-cascade accelerator | <https://github.com/need-singularity/hexa-cern>                |
 
 Stages 4-7 (warp / wormhole / dim-jump / dim-use) have **no public sister
 substrate** — they remain TBD pending future extraction (or pending the
