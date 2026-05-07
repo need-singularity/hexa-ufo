@@ -15,7 +15,6 @@
 |------|--------|---------|
 | [`meta-closure-nav.md`](meta-closure-nav.md) | `canon/domains/physics/meta-closure-nav/meta-closure-nav.md` (commit `50f41e71`) | 968-line canonical doc — Meta² Self-Referential Closure Navigation, Knuth arrow chain, Cantor ordinal extension, n=6 uniqueness propagation across tetration / pentation / hexation, Δ₀-absolute n=6 invariance up to 𝔚. |
 | [`sf-novel-six.md`](sf-novel-six.md) | extracted from discovery transcript body lines 2710~2935 | **12-chapter SF-novel narrative** — layperson-readable walkthrough of the entire alien_index ladder (🛸6 substrate → 🛸16 meta² → 🛸∞⁴ Knuth → 🛸ULTRA uncomputable → 🛸CARD large cardinals → 🛸BEYOND Kunen-violating → 🛸ABSOLUTE = 𝔚 Cantor Absolute Infinity). Includes Δ₀-absolute n=6 invariance theorem in Chapter 12. |
-| [`discovery-transcript-2026-04-21.txt`](discovery-transcript-2026-04-21.txt) | `~/loss/ufo.txt` (terminal session dump, 3,646 lines) | Live discovery transcript — Knuth-arrow extension + 🛸ULTRA/🛸CARD/🛸BEYOND/🛸ABSOLUTE 4-tier hierarchy + Δ₀-absolute theorem reasoning, atlas extension commits, push notes, original SF-novel writing session. |
 
 ## Atlas terminal chain (canonical reference)
 

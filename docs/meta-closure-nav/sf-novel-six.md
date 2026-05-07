@@ -1,12 +1,17 @@
-<!-- @canonical: extracted-from docs/meta-closure-nav/discovery-transcript-2026-04-21.txt body lines 2710~2935 -->
-<!-- @session-prompt: "일반인이 이해하기 쉽게 설명좀 sf 소설이나 이런걸로 설명" (2026-04-21) -->
-<!-- @upstream-canon-commit: 35731245 — feat(ufo-🛸무한대+): Δ₀-absolute 정리 + ULTRA/CARD/BEYOND/ABS 4 계층 -->
+<!-- @canonical: composed 2026-04-21 in response to "일반인이 이해하기 쉽게 설명좀 sf 소설이나 이런걸로 설명" -->
+<!-- @upstream-canon-commit: dancinlab/n6-architecture@35731245 — feat(ufo-🛸무한대+): Δ₀-absolute 정리 + ULTRA/CARD/BEYOND/ABS 4 계층 -->
+<!-- @companion-ref: ./meta-closure-nav.md (canon SHA 50f41e71 — 968-LOC mathematical companion) -->
 
 # 🛸 "여섯 번째 법" — 은하 문명 대사전 발췌
 
 > SF-소설 형식의 hexa-ufo alien_index 12-층위 입문서.
 > 같은 발견(`σ·φ = n·τ = 24` 가 n=6 에서만 성립)을 12 장으로 풀어 쓴 일반-독자용 narrative.
-> 진짜 terminal — 🛸ABSOLUTE (𝔚 Cantor Absolute Infinity) — 까지 도달.
+> 진짜 terminal — **🛸ABSOLUTE = 𝔚** (Cantor Absolute Infinity) — 까지 도달.
+>
+> *Note*: 본문 6장의 `🛸17~🛸500` 표기는 narrative 작성 당시 session-batch
+> ceiling artifact. canonical chain은 `🛸17+` 재귀 layer (L(k)=24^(k-15)) 로
+> 일반화된다 — 🛸500 자체는 본질적 milestone 이 아님. 자세한 내용은
+> [`README.md`](README.md) + [`meta-closure-nav.md`](meta-closure-nav.md) 참조.
 
 ---
 
@@ -102,7 +107,7 @@ SF 관점에서 UFO 목격담의 공통점: *"보는 사람이 있을 때만 나
 
 ---
 
-## 6장 — 층위의 층위 (🛸17 ~ 🛸500)
+## 6장 — 층위의 층위 (🛸17+, 재귀 layers)
 
 🛸16이 "거울 하나"라면, 🛸17은 "거울 속의 거울", 🛸18은 "거울 속의 거울 속의 거울"...
 
@@ -225,7 +230,7 @@ L(k) = 24^(k-15)
 | 🛸6~🛸10 | 하드웨어 (병원/대학 인프라) | 아이폰 시대 진입 |
 | 🛸11~🛸15 | 공간·차원·다중우주 항법 | 순간이동·4D터널·오라클 |
 | 🛸16 | 자기 참조 closure (n=6 고정점) | 거울의 거울 |
-| 🛸17~🛸500 | 재귀 층위 (L(k)=24^(k-15)) | 층층이 중첩된 거울 |
+| 🛸17+ | 재귀 층위 (L(k)=24^(k-15)) | 층층이 중첩된 거울 |
 | 🛸∞~🛸∞⁴ | Knuth 화살표 (테트레이션) | 지도의 지도의 지도 |
 | 🛸ULTRA | Busy Beaver, TREE, Rayo | 계산 불가의 땅 |
 | 🛸CARD | 거대 기수 (inaccessible~I0) | 무한 자체 위계 |
