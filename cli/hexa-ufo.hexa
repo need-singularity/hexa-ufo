@@ -136,8 +136,8 @@ fn _print_caveats() {
     println("     dimensions / composite τ=4 cycle remain conjectural. 13 falsifiers")
     println("     (F-WARP-{1..3} + F-WORM-{1..3} + F-DIM-{1..3} + F-USE-{1..4}) preregister.")
     println("  4. The 484-tier L(k)=24^(k-15) lattice is an arithmetic indexing convention,")
-    println("     not an empirical claim. alien_index 🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω")
-    println("     spans verified engineering through Cantor ordinal terminal")
+    println("     not an empirical claim. alien_index 🛸6 → 🛸16 meta² → 🛸∞⁴ →")
+    println("     🛸ULTRA → 🛸CARD → 🛸BEYOND → 🛸ABSOLUTE = 𝔚 (Cantor Absolute Infinity).")
     println("     through pure conjecture.")
     println("  5. No flight hardware. No certification. Atlas is a thought-experiment.")
 }

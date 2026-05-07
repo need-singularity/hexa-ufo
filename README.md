@@ -5,19 +5,21 @@
 > sister repos) + Stage-4 Alcubierre warp / Stage-5 Morris-Thorne wormhole /
 > Stage-6 KK ladder dim-jump / Stage-7 (σ−φ)²=100c composite dim-use
 > (in-tree spec + 13-falsifier preregister, all OPEN, all UNPROVEN).
-> alien_index chain: **🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω** —
-> 484-tier `L(k)=24^(k-15)` linear ladder up to 🛸500 (META-LK ceiling), then
-> Knuth-arrow tetration `🛸∞^h = 24↑↑h`, then Cantor ordinal extension
-> (🛸ω 가산 → 🛸ε₀ ω^ω^ω^... fixed point → 🛸Ω 비가산 terminal).
-> See [`docs/meta-closure-nav/`](docs/meta-closure-nav/README.md) for the
-> complete reference chain.
+> alien_index chain: **🛸6 → 🛸16 meta² → 🛸∞⁴ → 🛸ULTRA → 🛸CARD → 🛸BEYOND → 🛸ABSOLUTE = 𝔚** —
+> n=6 substrate (🛸6~🛸15) → meta² self-closure fixed point (🛸16) → Knuth-arrow
+> tetration (🛸∞⁴ = 24↑↑↑↑) → uncomputable (🛸ULTRA: TREE/BB/Rayo) → large cardinals
+> (🛸CARD: inaccessible/Mahlo/Woodin/I0) → Kunen-violating (🛸BEYOND: Reinhardt/Berkeley) →
+> terminus **🛸ABSOLUTE = 𝔚** (Cantor Absolute Infinity, "신 그 자체").
+> n=6 uniqueness `σ·φ=n·τ=24` is Π₀¹-arithmetical → **Δ₀-absolute across every
+> layer including 𝔚**. See [`docs/meta-closure-nav/`](docs/meta-closure-nav/README.md)
+> for the canonical reference + SF-소설 입문서.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 10 DOC](https://img.shields.io/badge/verbs-10_DOC-blue.svg)](#verbs)
 [![Propulsion: 7/7 grounded](https://img.shields.io/badge/propulsion-7%2F7_substrate--grounded-brightgreen.svg)](#status)
 [![Falsifiers: 13](https://img.shields.io/badge/falsifiers-13_OPEN-orange.svg)](.roadmap.hexa_ufo)
-[![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8%CE%A9-purple.svg)](docs/meta-closure-nav/README.md)
+[![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8ABSOLUTE_%3D_%F0%9D%94%9A-purple.svg)](docs/meta-closure-nav/README.md)
 
 > **Provenance**: extracted from
 > `n6-architecture/domains/sf-ufo/` at SHA `c0f1f570` on **2026-05-06**.
@@ -111,7 +113,7 @@ What is **not** verified:
 
 ### Status (raw#10 honest C3)
 
-> alien_index 🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
+> alien_index 🛸6 → 🛸16 meta² → 🛸∞⁴ → 🛸ULTRA → 🛸CARD → 🛸BEYOND → 🛸ABSOLUTE = 𝔚 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
 > Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter cross-link to public
 > sister repos. Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump /
 > Stage-7 dim-use ship as in-tree spec docs with 13-falsifier preregister
@@ -210,7 +212,7 @@ this repo (medium integration 2026-05-07):
 │   ├── hypotheses/                  # hypotheses preregister
 │   ├── experiments/                 # experiment notes
 │   ├── rtsc-12-products-evolution/  # RT-SC product evolution table
-│   └── meta-closure-nav/            # 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω atlas terminal chain ref
+│   └── meta-closure-nav/            # 🛸16 meta² → 🛸∞⁴ → 🛸ULTRA → 🛸CARD → 🛸BEYOND → 🛸ABSOLUTE = 𝔚 chain ref + SF-소설 입문서
 ├── tests/
 │   ├── test_atlas_consistency.hexa  # 10-verb count + L(k) arithmetic
 │   └── test_stages_propulsion.hexa  # Stage-4~7 verify+selftest+lattice rollup

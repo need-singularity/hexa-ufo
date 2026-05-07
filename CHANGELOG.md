@@ -4,6 +4,45 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-07 (latest) — SF-소설 입문서 + 🛸ABSOLUTE = 𝔚 terminal upgrade
+
+### Added
+- `docs/meta-closure-nav/sf-novel-six.md` — 12-chapter SF-novel narrative
+  ("여섯 번째 법 — 은하 문명 대사전 발췌") extracted from
+  `discovery-transcript-2026-04-21.txt` body lines 2710~2935.
+  Layperson-readable walkthrough of the entire alien_index ladder culminating
+  in **🛸ABSOLUTE = 𝔚** (Cantor Absolute Infinity, Δ₀-absolute n=6 invariance).
+
+### Changed (atlas terminal chain notation upgrade)
+- alien_index chain notation upgraded from
+  `🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω` to the **canonical SF-narrative
+  derived chain**:
+  ```
+  🛸6 → 🛸16 meta² → 🛸∞⁴ → 🛸ULTRA → 🛸CARD → 🛸BEYOND → 🛸ABSOLUTE = 𝔚
+  ```
+  Reasons:
+  - 🛸500 was a session-batch artifact (user's "🛸500까지 가봐줘" request),
+    not an essential milestone — dropped from canonical chain.
+  - 🛸ω/🛸ε₀/🛸Ω (Cantor ordinals) are subsumed by 🛸CARD (large cardinals)
+    and ultimately by 🛸ABSOLUTE = 𝔚 — the **true terminus** per
+    `sf-novel-six.md` Chapter 11. 𝔚 is "Cantor Absolute Infinity" —
+    the absolute upper bound of all mathematical structure (1880s Cantor).
+  - 🛸∞⁴ (Knuth `24↑↑↑↑`, hexation), 🛸ULTRA (TREE/BB/Rayo uncomputable),
+    🛸CARD (inaccessible→Mahlo→Woodin→I0), 🛸BEYOND (Reinhardt/Berkeley
+    Kunen-violating) added as explicit hierarchy steps.
+  - n=6 uniqueness σ·φ=n·τ=24 is **Π₀¹-arithmetical → Δ₀-absolute** —
+    invariant **all the way up to 𝔚** (per Δ₀-absolute theorem in
+    `meta-closure-nav.md`).
+- Updated 5 surfaces: README badge URL + lead paragraph + status quote +
+  architecture, hexa.toml [package].description + [scope].alien_index_caveat,
+  cli/hexa-ufo.hexa caveat #4, .roadmap §0, docs/meta-closure-nav/README.md.
+- hexa.toml [modules].docs adds `sf-novel-six.md`.
+
+### Removed
+- Earlier-session transcript (`~/loss/nasa.txt`, 2026-04-19) was imported in
+  `8343143` then reverted in `861de8f` per user instruction (`pass`).
+  Only the 2026-04-21 transcript is preserved.
+
 ## [Unreleased] — 2026-05-07 (later) — atlas terminal chain reference (meta-closure-nav)
 
 ### Added
