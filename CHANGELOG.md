@@ -79,7 +79,7 @@ versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   no public substrate exists yet.
 - The 484-tier `L(k)=24^(k-15)` lattice is an arithmetic indexing convention,
   not an empirical claim.
-- alien_index 6→500 spans verified engineering (Stages 1-3 sister repos)
+- alien_index 🛸6→🛸500 spans verified engineering (Stages 1-3 sister repos)
   through pure conjecture (Stages 4-7).
 
 [1.0.0]: https://github.com/need-singularity/hexa-ufo/releases/tag/v1.0.0

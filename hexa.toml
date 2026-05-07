@@ -9,7 +9,7 @@
 name = "hexa-ufo"
 version = "1.0.0"
 entry = "cli/hexa-ufo.hexa"
-description = "UFO Substrate Atlas + 7-stage Propulsion (grav/hover/cloak/teleport/sim/warp/wormhole/dimjump/dimuse). alien_index 6 to 500 — 1890-LOC main atlas + 10 propulsion verbs. Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter cross-link to public sister repos; Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump / Stage-7 dim-use ship as IN-TREE spec docs with 13 falsifier preregister (F-WARP/F-WORM/F-DIM/F-USE). Each stage academically UNPROVEN — sentinel PASS ≠ empirical PASS."
+description = "UFO Substrate Atlas + 7-stage Propulsion (grav/hover/cloak/teleport/sim/warp/wormhole/dimjump/dimuse). alien_index 🛸6 → 🛸500 — 1890-LOC main atlas + 10 propulsion verbs. Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter cross-link to public sister repos; Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump / Stage-7 dim-use ship as IN-TREE spec docs with 13 falsifier preregister (F-WARP/F-WORM/F-DIM/F-USE). Each stage academically UNPROVEN — sentinel PASS ≠ empirical PASS."
 license = "MIT"
 authors = ["박민우 <nerve011235@gmail.com>"]
 repository = "https://github.com/need-singularity/hexa-ufo"
@@ -95,7 +95,7 @@ stage_4_to_7_integrated = "2026-05-07 (medium integration: spec.md + verify/* in
 [scope]
 honest_scope = "ATLAS browser + 7-stage propulsion substrate. Stage-1 (Meissner) / Stage-2 (fusion) / Stage-3 (antimatter) cross-link to need-singularity sister repos. Stage-4 (warp Alcubierre) / Stage-5 (wormhole Morris-Thorne) / Stage-6 (dimjump KK ladder 4D→26D) / Stage-7 (dimuse τ=4 100c composite) ship as IN-TREE spec docs with 13 falsifier preregister. Empirical claim for Stage-4~7 is academically UNPROVEN — verify/* sentinel PASS validates lattice + token consistency, NOT empirical apparatus."
 not_scope = ["actual flight hardware", "prototype build", "FAA / aerospace certification", "warp-bubble engineering (no NEC violation control demonstrated)", "wormhole stabilization (no exotic-matter source)", "dimensional-jump KK-tower (no LHC observation)", "Stage-7 self-cycle energy (composite UNPROVEN²)"]
-alien_index_caveat = "alien_index 6 to 500 spans known engineering (RT-SC, fusion, antimatter — all with sister repos) through speculative physics (Alcubierre warp, Morris-Thorne wormhole, KK extra dimensions, composite warp+dimjump) through pure conjecture (Calabi-Yau navigation). The 484-tier L(k)=24^(k-15) lattice is an arithmetic indexing convention, not an empirical claim."
+alien_index_caveat = "alien_index 🛸6 → 🛸500 spans known engineering (RT-SC, fusion, antimatter — all with sister repos) through speculative physics (Alcubierre warp, Morris-Thorne wormhole, KK extra dimensions, composite warp+dimjump) through pure conjecture (Calabi-Yau navigation). The 484-tier L(k)=24^(k-15) lattice is an arithmetic indexing convention, not an empirical claim."
 
 # ── Cost profile ──────────────────────────────────────────
 [cost]

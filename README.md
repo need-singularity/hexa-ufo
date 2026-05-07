@@ -5,14 +5,14 @@
 > sister repos) + Stage-4 Alcubierre warp / Stage-5 Morris-Thorne wormhole /
 > Stage-6 KK ladder dim-jump / Stage-7 (σ−φ)²=100c composite dim-use
 > (in-tree spec + 13-falsifier preregister, all OPEN, all UNPROVEN).
-> alien_index spans **6 → 500** across a 484-tier `L(k)=24^(k-15)` lattice.
+> alien_index spans **🛸6 → 🛸500** across a 484-tier `L(k)=24^(k-15)` lattice.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 10 DOC](https://img.shields.io/badge/verbs-10_DOC-blue.svg)](#verbs)
 [![Propulsion: 7/7 grounded](https://img.shields.io/badge/propulsion-7%2F7_substrate--grounded-brightgreen.svg)](#status)
 [![Falsifiers: 13](https://img.shields.io/badge/falsifiers-13_OPEN-orange.svg)](.roadmap.hexa_ufo)
-[![alien_index](https://img.shields.io/badge/alien__index-6_to_500-purple.svg)](#status)
+[![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8500-purple.svg)](#status)
 
 > **Provenance**: extracted from
 > `n6-architecture/domains/sf-ufo/` at SHA `c0f1f570` on **2026-05-06**.
@@ -106,7 +106,7 @@ What is **not** verified:
 
 ### Status (raw#10 honest C3)
 
-> alien_index 6→500 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
+> alien_index 🛸6→🛸500 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
 > Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter cross-link to public
 > sister repos. Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump /
 > Stage-7 dim-use ship as in-tree spec docs with 13-falsifier preregister
@@ -182,7 +182,7 @@ this repo (medium integration 2026-05-07):
 │   └── hexa-ufo.hexa                # 10-verb router + status + selftest + lattice + verify
 ├── ufo/
 │   ├── doc/
-│   │   ├── hexa-ufo.md              # 1890-LOC main atlas (alien_index 6→500)
+│   │   ├── hexa-ufo.md              # 1890-LOC main atlas (alien_index 🛸6→🛸500)
 │   │   └── warp-dimension-design.md # warp/dimension design spec (BT-347~349)
 │   └── module/
 │       └── ufo_nexus_scan.hexa      # NEXUS-6 aerospace scan stub
