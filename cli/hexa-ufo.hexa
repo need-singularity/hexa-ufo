@@ -27,8 +27,8 @@
 // Honest C3:
 //   - 10 verbs are DOC-grade (markdown atlases / spec docs). No empirical sandbox.
 //   - Propulsion Stage-1/2/3 cross-link to public sister substrates
-//     (need-singularity/hexa-rtsc, need-singularity/hexa-fusion,
-//      need-singularity/hexa-antimatter, need-singularity/hexa-cern).
+//     (dancinlab/hexa-rtsc, dancinlab/hexa-fusion,
+//      dancinlab/hexa-antimatter, dancinlab/hexa-cern).
 //   - Propulsion Stage-4 (warp) / Stage-5 (wormhole) / Stage-6 (dim-jump) /
 //     Stage-7 (dim-use) ship as IN-TREE spec docs — UNPROVEN but substrate-grounded.
 //     Each stage carries a falsifier preregister (F-WARP-{1..3} + F-WORM-{1..3} +
@@ -136,7 +136,8 @@ fn _print_caveats() {
     println("     dimensions / composite τ=4 cycle remain conjectural. 13 falsifiers")
     println("     (F-WARP-{1..3} + F-WORM-{1..3} + F-DIM-{1..3} + F-USE-{1..4}) preregister.")
     println("  4. The 484-tier L(k)=24^(k-15) lattice is an arithmetic indexing convention,")
-    println("     not an empirical claim. alien_index 🛸6 → 🛸500 spans verified engineering")
+    println("     not an empirical claim. alien_index 🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω")
+    println("     spans verified engineering through Cantor ordinal terminal")
     println("     through pure conjecture.")
     println("  5. No flight hardware. No certification. Atlas is a thought-experiment.")
 }
@@ -248,7 +249,7 @@ fn cmd_status(a: [str]) {
     println("  verb        status   doc LOC   substrate-link")
     println("  ----------- -------- --------- --------------------------------------------")
     println("  ufo         DOC      " + str(_doc_loc(DOC_UFO)) + "      main atlas (484-tier L(k)=24^(k-15))")
-    println("  grav        DOC      " + str(_doc_loc(DOC_GRAV)) + "       Stage-1 Meissner (need-singularity/hexa-rtsc)")
+    println("  grav        DOC      " + str(_doc_loc(DOC_GRAV)) + "       Stage-1 Meissner (dancinlab/hexa-rtsc)")
     println("  hover       DOC      " + str(_doc_loc(DOC_HOVER)) + "       Stage-1/2 hover / VTOL")
     println("  cloak       DOC      " + str(_doc_loc(DOC_CLOAK)) + "       optical / RF / thermal cloaking")
     println("  teleport    DOC      " + str(_doc_loc(DOC_TELEPORT)) + "       Stage-5/6 wormhole / quantum-teleport")
@@ -259,9 +260,9 @@ fn cmd_status(a: [str]) {
     println("  dimuse      DOC      " + str(_doc_loc(DOC_DIMUSE)) + "       Stage-7 (σ−φ)²=100c composite (F-USE-1 F-USE-2 F-USE-3 F-USE-4)")
     println("")
     println("  propulsion stack (7-stage):")
-    println("    Stage-1 hover     Meissner diamagnetism (RT-SC 48T)        [need-singularity/hexa-rtsc]")
-    println("    Stage-2 cruise    MHD + tabletop fusion (D-T / p-11B)      [need-singularity/hexa-fusion]")
-    println("    Stage-3 orbital   antimatter gamma-rocket (anti-H + H)     [need-singularity/hexa-antimatter]")
+    println("    Stage-1 hover     Meissner diamagnetism (RT-SC 48T)        [dancinlab/hexa-rtsc]")
+    println("    Stage-2 cruise    MHD + tabletop fusion (D-T / p-11B)      [dancinlab/hexa-fusion]")
+    println("    Stage-3 orbital   antimatter gamma-rocket (anti-H + H)     [dancinlab/hexa-antimatter]")
     println("    Stage-4 warp      Alcubierre bubble δ=1/σ R=n               [in-tree warp/hexa-warp.md]")
     println("    Stage-5 wormhole  Morris-Thorne ER bridge b₀=ℓ_Pl·σ         [in-tree wormhole/hexa-wormhole.md]")
     println("    Stage-6 dim-jump  KK ladder 4D→6D→10D→11D→24D→26D          [in-tree dimjump/hexa-dimjump.md]")
@@ -364,7 +365,7 @@ fn cmd_version() {
     println("hexa-ufo " + VERSION)
     println("standalone UFO Substrate Atlas (extracted from n6-architecture@c0f1f570 on 2026-05-06)")
     println("license: MIT")
-    println("repo:    https://github.com/need-singularity/hexa-ufo")
+    println("repo:    https://github.com/dancinlab/hexa-ufo")
 }
 
 // ─── help ───

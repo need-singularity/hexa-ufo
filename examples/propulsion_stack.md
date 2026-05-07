@@ -9,9 +9,9 @@ Stages 4-7 are **TBD** (no public substrate exists yet).
 
 | Stage | alien_index | Mechanism                                | Operating regime         | Sister substrate (public)                                    | Status     |
 |-------|-------------|------------------------------------------|--------------------------|--------------------------------------------------------------|------------|
-| 1     | ~6-10       | Meissner diamagnetism (RT-SC 48T coil)   | 0~20 km altitude         | [`need-singularity/hexa-rtsc`](https://github.com/need-singularity/hexa-rtsc)             | grounded   |
-| 2     | ~10         | MHD + tabletop fusion (D-T / p-11B)      | 20~200 km                | [`need-singularity/hexa-fusion`](https://github.com/need-singularity/hexa-fusion)         | grounded   |
-| 3     | ~10         | antimatter gamma-rocket (anti-H + H, Isp 10^10 s) | 200 km~1 AU       | [`need-singularity/hexa-antimatter`](https://github.com/need-singularity/hexa-antimatter) + [`hexa-cern`](https://github.com/need-singularity/hexa-cern) | grounded   |
+| 1     | ~6-10       | Meissner diamagnetism (RT-SC 48T coil)   | 0~20 km altitude         | [`dancinlab/hexa-rtsc`](https://github.com/dancinlab/hexa-rtsc)             | grounded   |
+| 2     | ~10         | MHD + tabletop fusion (D-T / p-11B)      | 20~200 km                | [`dancinlab/hexa-fusion`](https://github.com/dancinlab/hexa-fusion)         | grounded   |
+| 3     | ~10         | antimatter gamma-rocket (anti-H + H, Isp 10^10 s) | 200 km~1 AU       | [`dancinlab/hexa-antimatter`](https://github.com/dancinlab/hexa-antimatter) + [`hexa-cern`](https://github.com/dancinlab/hexa-cern) | grounded   |
 | 4     | ~11         | Alcubierre warp bubble (sigma-phi=10 m, v_s = sigma^2 = 144c) | 1 AU~galactic | — (no public substrate)                                        | **TBD**    |
 | 5     | ~12         | Morris-Thorne ER bridge (b_0 = sigma*tau = 48 m) | intergalactic   | — (no public substrate)                                        | **TBD**    |
 | 6     | ~13         | KK-tower 4.8 TeV brane transit (dim-jump) | bulk-wide               | — (no public substrate)                                        | **TBD**    |
@@ -43,8 +43,8 @@ span META-LK017 through META-LK500.
 
 ## Cross-link
 
-- Sister: <https://github.com/need-singularity/hexa-rtsc>      (Stage-1)
-- Sister: <https://github.com/need-singularity/hexa-fusion>    (Stage-2)
-- Sister: <https://github.com/need-singularity/hexa-antimatter> (Stage-3)
-- Sister: <https://github.com/need-singularity/hexa-cern>    (Stage-3 aux)
+- Sister: <https://github.com/dancinlab/hexa-rtsc>      (Stage-1)
+- Sister: <https://github.com/dancinlab/hexa-fusion>    (Stage-2)
+- Sister: <https://github.com/dancinlab/hexa-antimatter> (Stage-3)
+- Sister: <https://github.com/dancinlab/hexa-cern>    (Stage-3 aux)
 - Atlas:  `hexa-ufo ufo` (or `ufo/doc/hexa-ufo.md` — 1890 LOC)

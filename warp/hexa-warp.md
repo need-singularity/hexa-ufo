@@ -168,9 +168,9 @@ Silent retract is a raw 91 honest C3 violation.
 `hexa-warp` is **Stage-4** of the hexa-ufo propulsion ladder:
 
 ```
-Stage-1 hover     Meissner diamagnetism (RT-SC 48T)        ← need-singularity/hexa-rtsc
-Stage-2 cruise    MHD + tabletop fusion                    ← need-singularity/hexa-fusion
-Stage-3 orbital   antimatter gamma-rocket                  ← need-singularity/hexa-antimatter
+Stage-1 hover     Meissner diamagnetism (RT-SC 48T)        ← dancinlab/hexa-rtsc
+Stage-2 cruise    MHD + tabletop fusion                    ← dancinlab/hexa-fusion
+Stage-3 orbital   antimatter gamma-rocket                  ← dancinlab/hexa-antimatter
 Stage-4 warp      Alcubierre bubble (this spec)            ← warp/hexa-warp.md
 Stage-5 wormhole  Morris-Thorne ER bridge                  ← wormhole/hexa-wormhole.md
 Stage-6 dim-jump  KK ladder 4D→6D→10D→11D→24D→26D          ← dimjump/hexa-dimjump.md

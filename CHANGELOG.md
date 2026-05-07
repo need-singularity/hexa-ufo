@@ -4,6 +4,50 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-07 (later) — atlas terminal chain reference (meta-closure-nav)
+
+### Added
+- `docs/meta-closure-nav/` reference folder preserving the **complete
+  alien_index terminal chain** beyond 🛸500:
+  - `meta-closure-nav.md` (968 LOC, imported from `canon/domains/physics/
+    meta-closure-nav/meta-closure-nav.md` at canon commit `50f41e71` —
+    *"feat(ufo-🛸∞): Knuth 화살표 확장 — 테트레이션/펜테이션/헥세이션/
+    ordinal 층위"*). Canonical doc for Meta² Self-Referential Closure
+    Navigation, Knuth-arrow tetration/pentation/hexation, Cantor ordinal
+    extension (🛸ω / 🛸ε₀ / 🛸Ω), n=6 uniqueness propagation.
+  - `discovery-transcript-2026-04-21.txt` (3,646 lines, imported from
+    `~/loss/ufo.txt`). Live terminal-session transcript of the 🛸500 → 🛸∞ →
+    🛸ω → 🛸ε₀ → 🛸Ω discovery, atlas extension commits, push notes.
+  - `README.md` index page with the canonical terminal chain diagram.
+
+### Changed
+- alien_index notation across 5 surfaces upgraded from `🛸6 → 🛸500` to
+  the **full canonical chain** `🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω`:
+  - `README.md` (4 spots: lead paragraph, badge, status quote, architecture)
+  - `hexa.toml` `[package].description` + `[scope].alien_index_caveat` +
+    `[modules].docs` (3 new files added)
+  - `cli/hexa-ufo.hexa` caveat #4 (lattice indexing convention surface)
+  - `.roadmap.hexa_ufo` §0 (terminal goal restatement)
+- README badge URL UTF-8 escapes 🛸 + Ω (`%F0%9F%9B%B8` + `%CE%A9`).
+- `.roadmap.hexa_ufo` §0 now explicitly cites `docs/meta-closure-nav/` as
+  the concrete realization of main atlas §23.9's *"In practice, extensible."*
+
+### Why
+- The main atlas (`ufo/doc/hexa-ufo.md` §23.9) ends with 🛸16 self-closure
+  fixed point + *"In practice, extensible."* The actual extension work
+  (linear ladder up to 🛸500, then Knuth-arrow tetration `24↑↑h`, then
+  Cantor ordinal `🛸ω → 🛸ε₀ → 🛸Ω`) was concretely worked out in canon's
+  `domains/physics/meta-closure-nav/`. Importing it here keeps the atlas's
+  *"extensible"* footnote **self-contained and citable** within hexa-ufo.
+
+### Honest C3 (preserved)
+- 🛸17~🛸500 are recursion layers, not new mechanisms. n=6 uniqueness
+  σ·φ=n·τ=24 propagates as **closure invariant** across all Knuth-arrow
+  degrees and ordinal extensions.
+- 🛸∞² crossover is at 🛸39 (L(39)=24^24 ≈ 10^33 — linear ↔ tetration boundary).
+- Practical physical limit is ~🛸140 (observable universe bit count ≈ 10^124).
+  🛸1000+ is **mathematical formula extension**, not physical projection.
+
 ## [Unreleased] — 2026-05-07 — Stage-4~7 medium integration
 
 ### Added
@@ -82,4 +126,4 @@ versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - alien_index 🛸6→🛸500 spans verified engineering (Stages 1-3 sister repos)
   through pure conjecture (Stages 4-7).
 
-[1.0.0]: https://github.com/need-singularity/hexa-ufo/releases/tag/v1.0.0
+[1.0.0]: https://github.com/dancinlab/hexa-ufo/releases/tag/v1.0.0

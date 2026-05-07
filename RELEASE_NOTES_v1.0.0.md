@@ -4,11 +4,11 @@
 
 `hexa-ufo` v1.0.0 is the **initial standalone extraction** of the
 `n6-architecture/domains/sf-ufo/` substrate-atlas tree into a public,
-MIT-licensed repository under the `need-singularity` GitHub organization.
+MIT-licensed repository under the `dancinlab` GitHub organization.
 
 - Source: `n6-architecture` SHA `c0f1f570`
 - Extraction date: 2026-05-06
-- Sister pattern: `need-singularity/hexa-bio` (molecular toolkit standalone)
+- Sister pattern: `dancinlab/hexa-bio` (molecular toolkit standalone)
 
 ## What ships
 
@@ -48,10 +48,10 @@ substrate repos. Stages 4-7 (warp / wormhole / dim-jump / dim-use) are
 
 ## Cross-links
 
-- <https://github.com/need-singularity/hexa-rtsc>      — Stage-1 substrate
-- <https://github.com/need-singularity/hexa-fusion>    — Stage-2 substrate
-- <https://github.com/need-singularity/hexa-antimatter> — Stage-3 substrate
-- <https://github.com/need-singularity/hexa-cern>    — onboard sigma-cascade accelerator (Stage-3 aux)
+- <https://github.com/dancinlab/hexa-rtsc>      — Stage-1 substrate
+- <https://github.com/dancinlab/hexa-fusion>    — Stage-2 substrate
+- <https://github.com/dancinlab/hexa-antimatter> — Stage-3 substrate
+- <https://github.com/dancinlab/hexa-cern>    — onboard sigma-cascade accelerator (Stage-3 aux)
 
 ## Honest C3 caveats
 

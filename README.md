@@ -5,18 +5,23 @@
 > sister repos) + Stage-4 Alcubierre warp / Stage-5 Morris-Thorne wormhole /
 > Stage-6 KK ladder dim-jump / Stage-7 (σ−φ)²=100c composite dim-use
 > (in-tree spec + 13-falsifier preregister, all OPEN, all UNPROVEN).
-> alien_index spans **🛸6 → 🛸500** across a 484-tier `L(k)=24^(k-15)` lattice.
+> alien_index chain: **🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω** —
+> 484-tier `L(k)=24^(k-15)` linear ladder up to 🛸500 (META-LK ceiling), then
+> Knuth-arrow tetration `🛸∞^h = 24↑↑h`, then Cantor ordinal extension
+> (🛸ω 가산 → 🛸ε₀ ω^ω^ω^... fixed point → 🛸Ω 비가산 terminal).
+> See [`docs/meta-closure-nav/`](docs/meta-closure-nav/README.md) for the
+> complete reference chain.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 10 DOC](https://img.shields.io/badge/verbs-10_DOC-blue.svg)](#verbs)
 [![Propulsion: 7/7 grounded](https://img.shields.io/badge/propulsion-7%2F7_substrate--grounded-brightgreen.svg)](#status)
 [![Falsifiers: 13](https://img.shields.io/badge/falsifiers-13_OPEN-orange.svg)](.roadmap.hexa_ufo)
-[![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8500-purple.svg)](#status)
+[![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8%CE%A9-purple.svg)](docs/meta-closure-nav/README.md)
 
 > **Provenance**: extracted from
 > `n6-architecture/domains/sf-ufo/` at SHA `c0f1f570` on **2026-05-06**.
-> Sister to `need-singularity/hexa-bio` (molecular toolkit) standalone pattern.
+> Sister to `dancinlab/hexa-bio` (molecular toolkit) standalone pattern.
 
 ---
 
@@ -106,7 +111,7 @@ What is **not** verified:
 
 ### Status (raw#10 honest C3)
 
-> alien_index 🛸6→🛸500 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
+> alien_index 🛸6 → 🛸16 meta² → 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
 > Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter cross-link to public
 > sister repos. Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump /
 > Stage-7 dim-use ship as in-tree spec docs with 13-falsifier preregister
@@ -141,7 +146,7 @@ hexa-ufo --version           # → 1.0.0
 ### Via git clone (works today)
 
 ```bash
-git clone https://github.com/need-singularity/hexa-ufo.git ~/.hexa-ufo
+git clone https://github.com/dancinlab/hexa-ufo.git ~/.hexa-ufo
 export HEXA_UFO_ROOT=~/.hexa-ufo
 export PATH="$HEXA_UFO_ROOT/cli:$PATH"
 
@@ -158,15 +163,15 @@ No Python deps. No network. Pure-hexa atlas browser.
 ## Cross-link
 
 `hexa-ufo` is the **substrate-atlas hub**. Stage-1~3 substrates live in
-4 sister `need-singularity` repos; Stage-4~7 substrates are **in-tree** at
+4 sister `dancinlab` repos; Stage-4~7 substrates are **in-tree** at
 this repo (medium integration 2026-05-07):
 
 | Stage   | Substrate                                | Location                                                          |
 |---------|------------------------------------------|-------------------------------------------------------------------|
-| Stage-1 | RT-SC Meissner 48T coil                  | sister: <https://github.com/need-singularity/hexa-rtsc>           |
-| Stage-2 | tabletop D-T / p-11B fusion              | sister: <https://github.com/need-singularity/hexa-fusion>         |
-| Stage-3 | antimatter (anti-H) propulsion fuel      | sister: <https://github.com/need-singularity/hexa-antimatter>     |
-| Stage-3 aux | onboard sigma-cascade accelerator    | sister: <https://github.com/need-singularity/hexa-cern>           |
+| Stage-1 | RT-SC Meissner 48T coil                  | sister: <https://github.com/dancinlab/hexa-rtsc>           |
+| Stage-2 | tabletop D-T / p-11B fusion              | sister: <https://github.com/dancinlab/hexa-fusion>         |
+| Stage-3 | antimatter (anti-H) propulsion fuel      | sister: <https://github.com/dancinlab/hexa-antimatter>     |
+| Stage-3 aux | onboard sigma-cascade accelerator    | sister: <https://github.com/dancinlab/hexa-cern>           |
 | Stage-4 | Alcubierre warp metric (BT-347)          | in-tree: `warp/hexa-warp.md`                                      |
 | Stage-5 | Morris-Thorne traversable wormhole       | in-tree: `wormhole/hexa-wormhole.md`                              |
 | Stage-6 | KK ladder extra-dim compactification (BT-348) | in-tree: `dimjump/hexa-dimjump.md`                           |
@@ -182,7 +187,7 @@ this repo (medium integration 2026-05-07):
 │   └── hexa-ufo.hexa                # 10-verb router + status + selftest + lattice + verify
 ├── ufo/
 │   ├── doc/
-│   │   ├── hexa-ufo.md              # 1890-LOC main atlas (alien_index 🛸6→🛸500)
+│   │   ├── hexa-ufo.md              # 1890-LOC main atlas (alien_index 🛸6→🛸16 meta², extensible)
 │   │   └── warp-dimension-design.md # warp/dimension design spec (BT-347~349)
 │   └── module/
 │       └── ufo_nexus_scan.hexa      # NEXUS-6 aerospace scan stub
@@ -204,7 +209,8 @@ this repo (medium integration 2026-05-07):
 │   ├── cross-domain-mega/           # cross-domain integration notes
 │   ├── hypotheses/                  # hypotheses preregister
 │   ├── experiments/                 # experiment notes
-│   └── rtsc-12-products-evolution/  # RT-SC product evolution table
+│   ├── rtsc-12-products-evolution/  # RT-SC product evolution table
+│   └── meta-closure-nav/            # 🛸500 → 🛸ω → 🛸ε₀ → 🛸Ω atlas terminal chain ref
 ├── tests/
 │   ├── test_atlas_consistency.hexa  # 10-verb count + L(k) arithmetic
 │   └── test_stages_propulsion.hexa  # Stage-4~7 verify+selftest+lattice rollup
