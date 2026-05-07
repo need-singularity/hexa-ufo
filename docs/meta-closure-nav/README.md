@@ -11,8 +11,7 @@
 | File | Source | Purpose |
 |------|--------|---------|
 | [`meta-closure-nav.md`](meta-closure-nav.md) | `canon/domains/physics/meta-closure-nav/meta-closure-nav.md` (commit `50f41e71`) | 968-line canonical doc — Meta² Self-Referential Closure Navigation, Knuth arrow chain, Cantor ordinal extension, n=6 uniqueness propagation across tetration / pentation / hexation. |
-| [`discovery-transcript-2026-04-19.txt`](discovery-transcript-2026-04-19.txt) | `~/loss/nasa.txt` (terminal session dump, 3,435 lines) | Earlier session — atlas `🛸17→🛸500` autonomous-loop kickoff, 6-seed batch generation (warp/worm/mthe/calb/mult/meta), 484-tier population. |
-| [`discovery-transcript-2026-04-21.txt`](discovery-transcript-2026-04-21.txt) | `~/loss/ufo.txt` (terminal session dump, 3,646 lines) | Later session — `🛸500 → 🛸∞ → 🛸ω → 🛸ε₀ → 🛸Ω` Knuth-arrow + Cantor-ordinal chain reasoning, atlas extension commits, push notes. |
+| [`discovery-transcript-2026-04-21.txt`](discovery-transcript-2026-04-21.txt) | `~/loss/ufo.txt` (terminal session dump, 3,646 lines) | Live discovery transcript — `🛸500 → 🛸∞ → 🛸ω → 🛸ε₀ → 🛸Ω` chain reasoning, atlas extension commits, push notes. |
 
 ## Atlas terminal chain (canonical reference)
 
