@@ -47,15 +47,80 @@ DoD:
 
 - **Cycle 0 (2026-05-06)** — v1.0.0 initial extraction from n6-architecture@c0f1f570. Commit `8ea04e9`. 21 files / 8261 LOC.
 
-## §A.4 Falsifier preregister
+## §A.4 Falsifier preregister (UFO-level meta)
 
 - **F-UFO-1** — 484-tier L(k)=24^(k-15) 산식 다음 tier (k=16, L=24) 측정 또는 candidate 일치?
 - **F-UFO-2** — Stage-1 Meissner levitation + Stage-2 8.7 kW p-¹¹B 동시 작동 가능 (cross-domain interference 측정)?
-- **F-UFO-3** — alien_index 500 = closed-form fit, Stage 4~7 미공개 도메인 falsifier 명세 가능?
-- **F-UFO-4** — propulsion 6-verb 모두 wiring 시 onboard cross-domain failure mode 발견 여부?
+- **F-UFO-3** — alien_index 500 = closed-form fit, Stage 4~7 미공개 도메인 falsifier 명세 가능? **2026-05-07 update: §B inline 13-falsifier preregister 통합으로 부분 충족 — Stage-4 (F-WARP-{1..3}), Stage-5 (F-WORM-{1..3}), Stage-6 (F-DIM-{1..3}), Stage-7 (F-USE-{1..4}). 격자 식별자는 명시화 OK; 실증 missing 은 별도 over-time gate.**
+- **F-UFO-4** — propulsion 10-verb 모두 wiring 시 onboard cross-domain failure mode 발견 여부?
 
 ## §A.5 Pending decisions
 
-- Stage-4 (warp-drive) substrate 공개 시점 (현재 reports/sessions/specs 만 존재).
+- ~~Stage-4 (warp-drive) substrate 공개 시점 (현재 reports/sessions/specs 만 존재).~~ **2026-05-07 closed: warp/wormhole/dimjump/dimuse 4 stage 모두 in-tree spec + falsifier preregister landed (medium 통합).**
 - alien_index 500 도달 path: stage-by-stage vs 분기 path multi-route?
-- propulsion 6-verb 의 .hexa CLI wiring order.
+- propulsion 10-verb 의 .hexa CLI wiring order.
+
+---
+
+## §B Stage-4~7 in-tree substrate falsifier preregister
+
+> **Status (raw#10 honest C3)**: 4 stage 모두 학술적 UNPROVEN — 각 stage는
+> in-tree spec + 13 falsifier preregister 만 ship한다. CLI sentinel PASS 는
+> 격자 산술 + 토큰 일관성 검증 결과이며 empirical claim 검증이 아니다.
+> Falsifier monotone: OPEN → CONFIRMED 또는 OPEN → DEMOTED. silent retract 금지.
+
+### §B.1 Stage-4 — warp (Alcubierre 1994)
+
+Spec: `warp/hexa-warp.md` · Verb: `hexa-ufo warp` · Composite-into: Stage-7 (dimuse)
+
+| ID       | Falsifier                                                                     | Status |
+|----------|-------------------------------------------------------------------------------|--------|
+| F-WARP-1 | Casimir cavity cannot realise negative energy at warp scale                   | OPEN   |
+| F-WARP-2 | bubble wall observer cannot signal outside (horizon problem)                  | OPEN   |
+| F-WARP-3 | back-reaction destroys bubble before propulsion completes                     | OPEN   |
+
+n=6 encoding: δ=1/σ Planck-thickness wall, R=n=6 bubble radius, ladder c/σ→c/n→c/τ→c/φ, Van Den Broeck σ²=144 reduction.
+
+### §B.2 Stage-5 — wormhole (Morris-Thorne 1988)
+
+Spec: `wormhole/hexa-wormhole.md` · Verb: `hexa-ufo wormhole`
+
+| ID       | Falsifier                                                                     | Status |
+|----------|-------------------------------------------------------------------------------|--------|
+| F-WORM-1 | no quantum-field source can sustain b₀>ℓ_Pl exotic-matter density             | OPEN   |
+| F-WORM-2 | back-reaction collapses throat (quantum interest conjecture)                  | OPEN   |
+| F-WORM-3 | chronology protection / closed-timelike-curve formation precludes traversal   | OPEN   |
+
+n=6 encoding: throat b₀ = ℓ_Pl·σ = 12 ℓ_Pl, ANEC bound ∫T·k²dλ ≥ -ℏc/(b₀⁴·τ) τ=4, traversal Δt ~ b₀/c·(σ−φ)=10b₀/c.
+
+### §B.3 Stage-6 — dimjump (Calabi-Yau / Kaluza-Klein)
+
+Spec: `dimjump/hexa-dimjump.md` · Verb: `hexa-ufo dimjump` · Composite-into: Stage-7 (dimuse)
+
+| ID      | Falsifier                                                                      | Status |
+|---------|--------------------------------------------------------------------------------|--------|
+| F-DIM-1 | LHC 14 TeV resonance hunt null → DEMOTE m_KK = nℏ/R_c·c with R_c probed         | OPEN   |
+| F-DIM-2 | sub-millimeter gravity test null → DEMOTE σ^(n/φ) compactification radius      | OPEN   |
+| F-DIM-3 | no observed vacuum-energy transition → DEMOTE E_fold barrier scale             | OPEN   |
+
+n=6 encoding: dimension ladder τ→n→σ−φ→σ−μ→J₂→J₂+φ = 4D→6D→10D→11D→24D→26D. R_c = ℓ_Pl·σ^(n/φ) = ℓ_Pl·12³.
+
+### §B.4 Stage-7 — dimuse (composite-of warp + dimjump)
+
+Spec: `dimuse/hexa-dimuse.md` · Verb: `hexa-ufo dimuse` · Upstream: Stage-4 (warp) + Stage-6 (dimjump)
+
+| ID      | Falsifier                                                                                          | Status |
+|---------|----------------------------------------------------------------------------------------------------|--------|
+| F-USE-1 | warp Stage-4 ANEC bound saturated → DEMOTE 10c warp factor                                         | OPEN   |
+| F-USE-2 | dimjump Stage-6 KK m > 14 TeV from LHC → DEMOTE 10× dimensional compression                        | OPEN   |
+| F-USE-3 | self-cycle violates 2nd-law thermodynamics in 4D projection                                        | OPEN   |
+| F-USE-4 | composite back-reaction destabilizes both stages simultaneously (warp+dimjump)                     | OPEN   |
+
+n=6 encoding: τ=4 stage cycle (fold→accel→cruise→jump), effective speed (σ−φ)²=100c, α-Cen 16-day.
+**UNPROVEN²** — both upstream substrates (warp, dimjump) are themselves UNPROVEN.
+
+### §B.5 Aggregate
+
+- Total falsifiers preregistered: **13** (F-WARP=3, F-WORM=3, F-DIM=3, F-USE=4)
+- All status: **OPEN** at v1.0.0
+- Verifier: `hexa run verify/stages_falsifier.hexa` — checks each ID present in 3 surfaces (spec / cli / roadmap) with OPEN status.

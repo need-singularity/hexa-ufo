@@ -4,7 +4,8 @@
 // Atlas consistency self-test:
 //   1. 484-tier L(k)=24^(k-15) lattice arithmetic sanity
 //      (L(15)=1, L(16)=24, L(17)=576, L(18)=13824)
-//   2. 6-verb count check (ufo / grav / hover / cloak / teleport / sim)
+//   2. 10-verb count check (ufo / grav / hover / cloak / teleport / sim
+//      + warp / wormhole / dimjump / dimuse — 4 in-tree Stage-4~7 specs)
 //
 // PASS criterion:
 //   __HEXA_UFO_ATLAS_CONSISTENCY__ PASS
@@ -67,8 +68,12 @@ fn test_verbs() -> int {
         HU + "/cloak/hexa-cloak.md",
         HU + "/teleport/hexa-teleport.md",
         HU + "/sim/hexa-sim.md",
+        HU + "/warp/hexa-warp.md",
+        HU + "/wormhole/hexa-wormhole.md",
+        HU + "/dimjump/hexa-dimjump.md",
+        HU + "/dimuse/hexa-dimuse.md",
     ]
-    let names = ["ufo", "grav", "hover", "cloak", "teleport", "sim"]
+    let names = ["ufo", "grav", "hover", "cloak", "teleport", "sim", "warp", "wormhole", "dimjump", "dimuse"]
     let mut n = 0
     let mut i = 0
     while i < verbs.len() {
@@ -92,10 +97,10 @@ fn main() {
     let lat_ok = test_lattice()
     println("    " + (if lat_ok { "PASS" } else { "FAIL" }))
     println("")
-    println("[2] 6-verb count")
+    println("[2] 10-verb count")
     let n = test_verbs()
-    let verbs_ok = (n == 6)
-    println("    " + str(n) + "/6 verbs present — " + (if verbs_ok { "PASS" } else { "FAIL" }))
+    let verbs_ok = (n == 10)
+    println("    " + str(n) + "/10 verbs present — " + (if verbs_ok { "PASS" } else { "FAIL" }))
     println("")
     let pass = lat_ok && verbs_ok
     if pass {

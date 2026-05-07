@@ -1,15 +1,17 @@
 # 🛸 hexa-ufo — UFO Substrate Atlas + 7-stage Propulsion
 
-> 6-verb UFO substrate atlas organized around a **7-stage propulsion stack**:
-> Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter (substrate-grounded
-> via sister repos) → Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump /
-> Stage-7 dim-use (TBD — no public substrate exists yet).
+> 10-verb UFO substrate atlas organized around a **7-stage propulsion stack**:
+> Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter (cross-link to
+> sister repos) + Stage-4 Alcubierre warp / Stage-5 Morris-Thorne wormhole /
+> Stage-6 KK ladder dim-jump / Stage-7 (σ−φ)²=100c composite dim-use
+> (in-tree spec + 13-falsifier preregister, all OPEN, all UNPROVEN).
 > alien_index spans **6 → 500** across a 484-tier `L(k)=24^(k-15)` lattice.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
-[![Verbs: 6 DOC](https://img.shields.io/badge/verbs-6_DOC-blue.svg)](#verbs)
-[![Propulsion: 3/7 grounded](https://img.shields.io/badge/propulsion-3%2F7_substrate--grounded-orange.svg)](#status)
+[![Verbs: 10 DOC](https://img.shields.io/badge/verbs-10_DOC-blue.svg)](#verbs)
+[![Propulsion: 7/7 grounded](https://img.shields.io/badge/propulsion-7%2F7_substrate--grounded-brightgreen.svg)](#status)
+[![Falsifiers: 13](https://img.shields.io/badge/falsifiers-13_OPEN-orange.svg)](.roadmap.hexa_ufo)
 [![alien_index](https://img.shields.io/badge/alien__index-6_to_500-purple.svg)](#status)
 
 > **Provenance**: extracted from
@@ -22,73 +24,107 @@
 
 The flying saucer is the icon of speculative engineering. `hexa-ufo` collects
 the design-draft atlas (1890-LOC main document) plus 5 propulsion sub-axis
-docs (grav / hover / cloak / teleport / sim) into a single browsable
-substrate registry, organized around a 7-stage propulsion ladder:
+docs (grav / hover / cloak / teleport / sim) plus 4 in-tree Stage-4~7
+substrate spec docs (warp / wormhole / dimjump / dimuse) into a single
+browsable substrate registry, organized around a 7-stage propulsion ladder:
 
 ```
-  Stage-1 hover     Meissner diamagnetism (RT-SC 48T)        0~20 km altitude
-  Stage-2 cruise    MHD + tabletop fusion (D-T / p-11B)      20~200 km
-  Stage-3 orbital   antimatter gamma-rocket (anti-H + H)     200 km~1 AU
-  Stage-4 warp      Alcubierre bubble                        1 AU~galactic   [TBD]
-  Stage-5 wormhole  Morris-Thorne ER bridge                  intergalactic   [TBD]
-  Stage-6 dim-jump  KK-tower 4.8 TeV brane transit           bulk wide       [TBD]
-  Stage-7 dim-use   Calabi-Yau 6-fold navigation             observer-invisible [TBD]
+  Stage-1 hover     Meissner diamagnetism (RT-SC 48T)        0~20 km altitude    [hexa-rtsc]
+  Stage-2 cruise    MHD + tabletop fusion (D-T / p-11B)      20~200 km           [hexa-fusion]
+  Stage-3 orbital   antimatter gamma-rocket (anti-H + H)     200 km~1 AU         [hexa-antimatter]
+  Stage-4 warp      Alcubierre bubble δ=1/σ R=n=6            1 AU~galactic       [in-tree warp/]
+  Stage-5 wormhole  Morris-Thorne b₀=ℓ_Pl·σ throat           intergalactic       [in-tree wormhole/]
+  Stage-6 dim-jump  KK ladder 4D→6D→10D→11D→24D→26D          bulk wide           [in-tree dimjump/]
+  Stage-7 dim-use   τ=4 cycle (σ−φ)²=100c composite          observer-invisible  [in-tree dimuse/]
 ```
 
 Stages 1-3 cross-link to **public sister substrates** (see [Cross-link](#cross-link)
-below). Stages 4-7 ship as TBD — no public substrate exists yet.
+below). Stages 4-7 ship as **in-tree spec docs with 13-falsifier preregister**
+(F-WARP-{1..3} + F-WORM-{1..3} + F-DIM-{1..3} + F-USE-{1..4}, all OPEN at
+v1.0.0). Each Stage-4~7 claim is academically UNPROVEN — verify/* sentinel
+PASS validates lattice arithmetic + token consistency, NOT empirical apparatus.
 
 ---
 
 ## Verbs
 
-`hexa-ufo` exposes **6 verbs**, all DOC-grade in v1.0.0:
+`hexa-ufo` exposes **10 verbs**, all DOC-grade in v1.0.0:
 
-| Verb       | Status | Doc LOC | Cross-link / role                                          |
-|------------|--------|---------|------------------------------------------------------------|
-| `ufo`      | DOC    | 1890    | main atlas (484-tier `L(k)=24^(k-15)` indexing convention) |
-| `grav`     | DOC    | 653     | Stage-1 substrate: Meissner gravitomagnetic levitation     |
-| `hover`    | DOC    | 457     | Stage-1/2 substrate: hover / VTOL primitive                |
-| `cloak`    | DOC    | 471     | optical / RF / thermal cloaking                            |
-| `teleport` | DOC    | 440     | Stage-5/6 substrate: wormhole / quantum-teleport           |
-| `sim`      | DOC    | 614     | airframe / cross-domain simulation                         |
+| Verb        | Status | Cross-link / role                                                       |
+|-------------|--------|-------------------------------------------------------------------------|
+| `ufo`       | DOC    | main atlas (484-tier `L(k)=24^(k-15)` indexing convention)              |
+| `grav`      | DOC    | Stage-1 substrate: Meissner gravitomagnetic levitation                  |
+| `hover`     | DOC    | Stage-1/2 substrate: hover / VTOL primitive                             |
+| `cloak`     | DOC    | optical / RF / thermal cloaking                                         |
+| `teleport`  | DOC    | Stage-5/6 substrate: wormhole / quantum-teleport                        |
+| `sim`       | DOC    | airframe / cross-domain simulation                                      |
+| `warp`      | DOC    | **Stage-4** Alcubierre 1994 (in-tree, F-WARP-{1..3})                    |
+| `wormhole`  | DOC    | **Stage-5** Morris-Thorne 1988 traversable WH (in-tree, F-WORM-{1..3})  |
+| `dimjump`   | DOC    | **Stage-6** Calabi-Yau 4D→26D KK ladder (in-tree, F-DIM-{1..3})         |
+| `dimuse`    | DOC    | **Stage-7** τ=4 (σ−φ)²=100c composite (in-tree, F-USE-{1..4})           |
 
-Plus utility subcmds: `status`, `selftest`, `help`, `--version`.
+Plus utility subcmds: `status`, `selftest`, `lattice`, `verify`, `help`, `--version`.
 
 ```bash
 hexa-ufo ufo        # main atlas head
-hexa-ufo grav       # Stage-1 doc head
+hexa-ufo warp       # Stage-4 Alcubierre spec head
+hexa-ufo dimuse     # Stage-7 composite spec head
+hexa-ufo lattice    # live n=6 master identity (σ τ φ Hc2)
+hexa-ufo verify     # run verify/*.hexa (lattice + cross_doc + falsifier)
 hexa-ufo status     # propulsion-stage substrate table
-hexa-ufo selftest   # verb-count + lattice arithmetic sanity
+hexa-ufo selftest   # 10-verb-count + lattice arithmetic sanity
 ```
 
 ---
 
 ## Verification
 
-`hexa-ufo` is an **atlas browser** — verification scope is intentionally narrow:
+`hexa-ufo` is an **atlas browser + 7-stage substrate registry** — verification
+scope is two-tier:
 
-1. **6 verbs present** (`ufo / grav / hover / cloak / teleport / sim`), each
-   with a non-empty markdown doc. Checked by `hexa-ufo selftest`.
-2. **484-tier `L(k)=24^(k-15)` lattice arithmetic** sanity:
-   `L(15)=1`, `L(16)=24`, `L(17)=576`. Checked by `hexa-ufo selftest`.
+1. **Atlas tier (selftest)**: 10 verbs present + 484-tier `L(k)=24^(k-15)`
+   lattice arithmetic sanity (`L(15)=1`, `L(16)=24`, `L(17)=576`).
+2. **Substrate tier (verify/run_all)**: 3 invariant audits across `verify/`:
+   - `verify/lattice_check.hexa` — n=6 master identity (σ·φ ≡ n·τ ≡ 24)
+   - `verify/stages_cross_doc.hexa` — Stage-4~7 spec ↔ cli ↔ roadmap token agreement
+   - `verify/stages_falsifier.hexa` — 13 falsifier IDs × 3 surfaces (spec / cli / roadmap)
+
+```bash
+hexa run verify/run_all.hexa       # 3/3 scripts PASS
+hexa run cli/hexa-ufo.hexa verify  # equivalent (CLI wrapper)
+hexa run tests/test_stages_propulsion.hexa  # rolls up all 3 + selftest
+```
 
 What is **not** verified:
 
-- Empirical claims of any propulsion stage (Stages 1-3 defer to sister substrate
-  repos for empirical verification; Stages 4-7 are TBD).
+- Empirical claims of any propulsion stage. Stages 1-3 defer to sister substrate
+  repos. Stages 4-7 are academically UNPROVEN — Alcubierre / Morris-Thorne /
+  KK extra dimensions / composite τ=4 cycle remain conjectural.
 - Flight hardware / aerodynamic feasibility / FAA certification.
 - The narrative claims in the 1890-LOC main atlas — these are
   **design-draft / thought-experiment** content, not engineering specs.
 
 ### Status (raw#10 honest C3)
 
-> alien_index 6→500 7-stage propulsion atlas
-> (Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter /
->  Stage-4 warp / Stage-5 wormhole / Stage-6 dimension /
->  Stage-7 dimensional-use).
-> Stages 4~7는 공개 substrate 미존재 — TBD.
-> 1890 LOC main atlas + propulsion 6-verb.
+> alien_index 6→500 7-stage propulsion atlas — **all 7 stages substrate-grounded**.
+> Stage-1 Meissner / Stage-2 fusion / Stage-3 antimatter cross-link to public
+> sister repos. Stage-4 warp / Stage-5 wormhole / Stage-6 dim-jump /
+> Stage-7 dim-use ship as in-tree spec docs with 13-falsifier preregister
+> (F-WARP-{1..3} + F-WORM-{1..3} + F-DIM-{1..3} + F-USE-{1..4}, all OPEN).
+> Empirical claim for Stage-4~7 is UNPROVEN — verify/ sentinel PASS validates
+> lattice arithmetic + token consistency, NOT working apparatus.
+
+### Falsifier preregister (13 IDs, all OPEN at v1.0.0)
+
+| Stage   | IDs                                  | Spec doc                       |
+|---------|--------------------------------------|--------------------------------|
+| Stage-4 | F-WARP-1, F-WARP-2, F-WARP-3         | `warp/hexa-warp.md`            |
+| Stage-5 | F-WORM-1, F-WORM-2, F-WORM-3         | `wormhole/hexa-wormhole.md`    |
+| Stage-6 | F-DIM-1, F-DIM-2, F-DIM-3            | `dimjump/hexa-dimjump.md`      |
+| Stage-7 | F-USE-1, F-USE-2, F-USE-3, F-USE-4   | `dimuse/hexa-dimuse.md`        |
+
+Falsifiers are **monotone**: status flips OPEN → CONFIRMED or OPEN → DEMOTED.
+Silent retract is forbidden. See `.roadmap.hexa_ufo` §B for the canonical table.
 
 ---
 
@@ -121,19 +157,20 @@ No Python deps. No network. Pure-hexa atlas browser.
 
 ## Cross-link
 
-`hexa-ufo` is the **substrate-atlas hub** — the actual physical substrates
-live in 4 sister `need-singularity` repos:
+`hexa-ufo` is the **substrate-atlas hub**. Stage-1~3 substrates live in
+4 sister `need-singularity` repos; Stage-4~7 substrates are **in-tree** at
+this repo (medium integration 2026-05-07):
 
-| Stage   | Substrate                | Sister repo (public, GitHub)                                                 |
-|---------|--------------------------|------------------------------------------------------------------------------|
-| Stage-1 | RT-SC Meissner 48T coil  | <https://github.com/need-singularity/hexa-rtsc>                              |
-| Stage-2 | tabletop D-T / p-11B fusion power | <https://github.com/need-singularity/hexa-fusion>                   |
-| Stage-3 | antimatter (anti-H) propulsion fuel | <https://github.com/need-singularity/hexa-antimatter>             |
-| Stage-3 aux | onboard sigma-cascade accelerator | <https://github.com/need-singularity/hexa-cern>                |
-
-Stages 4-7 (warp / wormhole / dim-jump / dim-use) have **no public sister
-substrate** — they remain TBD pending future extraction (or pending the
-existence of the underlying physics).
+| Stage   | Substrate                                | Location                                                          |
+|---------|------------------------------------------|-------------------------------------------------------------------|
+| Stage-1 | RT-SC Meissner 48T coil                  | sister: <https://github.com/need-singularity/hexa-rtsc>           |
+| Stage-2 | tabletop D-T / p-11B fusion              | sister: <https://github.com/need-singularity/hexa-fusion>         |
+| Stage-3 | antimatter (anti-H) propulsion fuel      | sister: <https://github.com/need-singularity/hexa-antimatter>     |
+| Stage-3 aux | onboard sigma-cascade accelerator    | sister: <https://github.com/need-singularity/hexa-cern>           |
+| Stage-4 | Alcubierre warp metric (BT-347)          | in-tree: `warp/hexa-warp.md`                                      |
+| Stage-5 | Morris-Thorne traversable wormhole       | in-tree: `wormhole/hexa-wormhole.md`                              |
+| Stage-6 | KK ladder extra-dim compactification (BT-348) | in-tree: `dimjump/hexa-dimjump.md`                           |
+| Stage-7 | τ=4 (σ−φ)²=100c composite (BT-349)       | in-tree: `dimuse/hexa-dimuse.md` (composite-of warp + dimjump)    |
 
 ---
 
@@ -142,27 +179,38 @@ existence of the underlying physics).
 ```
 /Users/ghost/core/hexa-ufo/
 ├── cli/
-│   └── hexa-ufo.hexa                # 6-verb router + status + selftest
+│   └── hexa-ufo.hexa                # 10-verb router + status + selftest + lattice + verify
 ├── ufo/
 │   ├── doc/
 │   │   ├── hexa-ufo.md              # 1890-LOC main atlas (alien_index 6→500)
-│   │   └── warp-dimension-design.md # warp/dimension design spec
+│   │   └── warp-dimension-design.md # warp/dimension design spec (BT-347~349)
 │   └── module/
 │       └── ufo_nexus_scan.hexa      # NEXUS-6 aerospace scan stub
-├── grav/hexa-grav.md                # Stage-1 Meissner doc (653 LOC)
-├── hover/hexa-hover.md              # Stage-1/2 hover / VTOL (457 LOC)
-├── cloak/hexa-cloak.md              # cloaking (471 LOC)
-├── teleport/hexa-teleport.md        # Stage-5/6 teleport (440 LOC)
-├── sim/hexa-sim.md                  # airframe / cross-domain sim (614 LOC)
+├── grav/hexa-grav.md                # Stage-1 Meissner doc
+├── hover/hexa-hover.md              # Stage-1/2 hover / VTOL
+├── cloak/hexa-cloak.md              # cloaking
+├── teleport/hexa-teleport.md        # Stage-5/6 teleport
+├── sim/hexa-sim.md                  # airframe / cross-domain sim
+├── warp/hexa-warp.md                # Stage-4 Alcubierre (in-tree, F-WARP-{1..3})
+├── wormhole/hexa-wormhole.md        # Stage-5 Morris-Thorne (in-tree, F-WORM-{1..3})
+├── dimjump/hexa-dimjump.md          # Stage-6 KK ladder 4D→26D (in-tree, F-DIM-{1..3})
+├── dimuse/hexa-dimuse.md            # Stage-7 (σ−φ)²=100c composite (in-tree, F-USE-{1..4})
+├── verify/
+│   ├── lattice_check.hexa           # n=6 master identity (10 PASS)
+│   ├── stages_cross_doc.hexa        # Stage-4~7 spec ↔ cli ↔ roadmap (19 PASS)
+│   ├── stages_falsifier.hexa        # 13 falsifier IDs × 3 surfaces (45 PASS)
+│   └── run_all.hexa                 # orchestrator (3/3 scripts PASS)
 ├── docs/
 │   ├── cross-domain-mega/           # cross-domain integration notes
 │   ├── hypotheses/                  # hypotheses preregister
 │   ├── experiments/                 # experiment notes
 │   └── rtsc-12-products-evolution/  # RT-SC product evolution table
 ├── tests/
-│   └── test_atlas_consistency.hexa  # verb count + lattice arithmetic
+│   ├── test_atlas_consistency.hexa  # 10-verb count + L(k) arithmetic
+│   └── test_stages_propulsion.hexa  # Stage-4~7 verify+selftest+lattice rollup
 ├── examples/
 │   └── propulsion_stack.md          # 7-stage evolution table
+├── .roadmap.hexa_ufo                # §A meta + §B Stage-4~7 13-falsifier preregister
 ├── install.hexa                     # hx hook (pre/post)
 ├── hexa.toml                        # package manifest
 ├── LICENSE                          # MIT
