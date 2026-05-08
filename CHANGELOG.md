@@ -4,6 +4,32 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 4 (Stage-7 dimuse T1; all 4 pillars T1 ✓)
+
+### Added (RSC iteration 4 — Stage-7 dimuse composite T1 algebraic)
+- `verify/calc_dimuse.hexa` — Stage-7 composite warp+dimjump pillar n=6
+  derived parameter calculator (T1 algebraic). 16/16 checks: 9 algebraic
+  identities (master σ·φ=n·τ=24, warp factor σ-φ=10c, dim compression
+  σ-φ=10×, composite v=(σ-φ)²=100c, τ-cycle=4 stages, sopfr(6)=2+3=5,
+  α-Cen heuristic sopfr·(σ-φ)/(σ-φ)²=0.5 spec-unit, VDB σ²=144,
+  UNPROVEN² composite chain length=2) + 7 spec-doc anchors in
+  `dimuse/hexa-dimuse.md` (master, composite 100c, warp 10c, sopfr,
+  α-Cen 16d, τ=4 cycle, F-USE-{1..4}).
+  Sentinel `__HEXA_UFO_CALC_DIMUSE__ PASS`.
+- Wired into `verify/run_all.hexa` SCRIPTS array (6 → 7) +
+  `hexa.toml` `[closure].verify_scripts` 6 → 7 + `[modules].hexa`.
+
+### Closure milestone
+- **All 4 Stage-4~7 pillars now have T1 algebraic closure**:
+  F-WARP-{1..3} ✓ + F-WORM-{1..3} ✓ + F-DIM-{1..3} ✓ + F-USE-{1..4} ✓.
+  13/13 falsifiers anchored at T1 (algebraic + spec-doc cross-check).
+  T2 (numerical re-derivation) and T3 (archival empirical parity) still
+  pending — next iter cycles target T2.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 7/7 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 3 (Stage-6 dimjump T1)
 
 ### Added (RSC iteration 3 — Stage-6 dimjump T1 algebraic)

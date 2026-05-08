@@ -14,6 +14,7 @@ let SCRIPTS: [str] = [
     "verify/calc_warp.hexa",
     "verify/calc_wormhole.hexa",
     "verify/calc_dimjump.hexa",
+    "verify/calc_dimuse.hexa",
 ]
 
 fn main() {
