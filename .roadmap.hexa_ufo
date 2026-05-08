@@ -52,6 +52,7 @@ DoD:
 - **Cycle 0 (2026-05-06)** — v1.0.0 initial extraction from n6-architecture@c0f1f570. Commit `8ea04e9`. 21 files / 8261 LOC.
 - **RSC iter 1 (2026-05-09)** — `verify/calc_warp.hexa` (Stage-4 T1 algebraic). 12/12 checks. closure-depth accumulation loop start per `~/core/bedrock/docs/runnable_surface_recipe.md` §7. Targets F-WARP-{1..3} T1 ✓.
 - **RSC iter 2 (2026-05-09)** — `verify/calc_wormhole.hexa` (Stage-5 T1 algebraic). 12/12 checks. Targets F-WORM-{1..3} T1 ✓ (b₀=σ·ℓ_Pl, ANEC 1/τ=1/4, φ=2 NEC channels).
+- **RSC iter 3 (2026-05-09)** — `verify/calc_dimjump.hexa` (Stage-6 T1 algebraic). 15/15 checks. Targets F-DIM-{1..3} T1 ✓ (6-rung ladder 4D→6D→10D→11D→24D→26D, R_c=12³·ℓ_Pl=1728·ℓ_Pl, E_fold=M_Pl·c²/(σ-φ)^d).
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 

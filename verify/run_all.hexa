@@ -13,6 +13,7 @@ let SCRIPTS: [str] = [
     "verify/stages_falsifier.hexa",
     "verify/calc_warp.hexa",
     "verify/calc_wormhole.hexa",
+    "verify/calc_dimjump.hexa",
 ]
 
 fn main() {

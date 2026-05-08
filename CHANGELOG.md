@@ -4,6 +4,24 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 3 (Stage-6 dimjump T1)
+
+### Added (RSC iteration 3 — Stage-6 dimjump T1 algebraic)
+- `verify/calc_dimjump.hexa` — Stage-6 Calabi-Yau / Kaluza-Klein dimjump
+  pillar n=6 derived parameter calculator (T1 algebraic). 15/15 checks:
+  9 algebraic identities (master σ·φ=n·τ=24, 6-rung dimension ladder
+  4D=τ / 6D=n / 10D=σ-φ / 11D=σ-μ / 24D=J₂ / 26D=J₂+φ, ladder strict
+  monotone, R_c=σ^(n/φ)·ℓ_Pl=1728·ℓ_Pl, E_fold(d=1) denom=10) + 6
+  spec-doc anchors in `dimjump/hexa-dimjump.md` (ladder, R_c formula,
+  m_KK, E_fold, master, F-DIM-{1..3}).
+  Sentinel `__HEXA_UFO_CALC_DIMJUMP__ PASS`.
+- Wired into `verify/run_all.hexa` SCRIPTS array (5 → 6) +
+  `hexa.toml` `[closure].verify_scripts` 5 → 6 + `[modules].hexa`.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 6/6 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 2 (Stage-5 wormhole T1)
 
 ### Added (RSC iteration 2 — Stage-5 wormhole T1 algebraic)
