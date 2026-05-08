@@ -4,6 +4,30 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 10 (Stage-5 wormhole T3)
+
+### Added (RSC iteration 10 — Stage-5 wormhole T3 archival empirical parity)
+- `verify/numerics_wormhole_parity.hexa` — Stage-5 wormhole pillar
+  published-data parity (T3). 14/14 checks against peer-reviewed
+  literature: §1 ANEC bound across decades (Pfenning-Ford 1997 form;
+  b₀=σ·ℓ_Pl→1.06e109 J·s/m² Planck regime; b₀=1m→7.9e-27 forbidden;
+  b₀=1nm intermediate; b₀⁻⁴ scaling exact 1e12 ratio across 1mm vs 1m;
+  1/τ=0.25 4-segment averaging) + §2 Morris-Thorne 1988 traversability
+  (flare-out b'(b₀)<1, Δτ at b₀=σ·ℓ_Pl sub-Planck-time, Δτ at b₀=1m =
+  33 ns = 10× light-travel, Δτ linear in b₀) + §3 spec citation
+  anchors (Morris-Thorne 1988, Ford-Roman 1995, Pfenning-Ford 1997,
+  Hawking 1992, Visser 1995).
+  Sentinel `__HEXA_UFO_NUMERICS_WORMHOLE_PARITY__ PASS`.
+
+### Closure milestone
+- F-WORM-{1..3} now T1 ✓ + T2 ✓ + T3 ✓ → **100% closure**.
+- Pillar status: F-WARP 100% · F-WORM 100% · F-DIM 67% · F-USE 67%.
+- 2/4 pillars saturated; 2 remaining for full sat-1.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 13/13 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 9 (Stage-4 warp T3; first parity tier)
 
 ### Added (RSC iteration 9 — Stage-4 warp T3 archival empirical parity)
