@@ -4,6 +4,31 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 8 (Stage-7 dimuse T2; all 4 pillars T1+T2)
+
+### Added (RSC iteration 8 — Stage-7 dimuse composite T2 numerical bridge)
+- `verify/numerics_dimuse.hexa` — Stage-7 composite warp+dimjump pillar
+  numerical SI re-derivation (T2). 12/12 checks: §1 algebraic↔numerical
+  consistency (master σ·φ=n·τ=24, v_comp=(σ-φ)²·c=100c, sopfr(6)=5,
+  UNPROVEN² chain length=2) + §2 traversal-time canonicals (α-Cen
+  4.37 ly/100c = **15.96 days ≈ BT-349 canonical 16 days**, Sirius 8.6 ly
+  = 31.4 days, ratio = distance ratio linear at 100c) + §3 energetics
+  + closed-loop falsifier regime (E_warp ≈ 1.24e45 J VDB-reduced,
+  E_fold(d=1) ≈ 1.96e8 J, **E_warp/E_fold ≈ 6.3e36 → single-cycle
+  fails 2nd law → F-USE-3 regime confirmed**) + §4 spec anchors
+  (α-Cen 16d, 2nd-law thermodynamics F-USE-3).
+  Sentinel `__HEXA_UFO_NUMERICS_DIMUSE__ PASS`.
+
+### Closure milestone
+- F-USE-{1..4} now T1 ✓ + T2 ✓.
+- **All 13 falsifiers (4 pillars) now T1+T2 closed.**
+- Pillar status: F-WARP T1+T2 · F-WORM T1+T2 · F-DIM T1+T2 · F-USE T1+T2.
+- Next: T3 (archival empirical parity tier) — published-data anchors.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 11/11 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 7 (Stage-6 dimjump T2)
 
 ### Added (RSC iteration 7 — Stage-6 dimjump T2 numerical bridge)
