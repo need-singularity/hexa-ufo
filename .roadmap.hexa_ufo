@@ -54,6 +54,7 @@ DoD:
 - **RSC iter 2 (2026-05-09)** — `verify/calc_wormhole.hexa` (Stage-5 T1 algebraic). 12/12 checks. Targets F-WORM-{1..3} T1 ✓ (b₀=σ·ℓ_Pl, ANEC 1/τ=1/4, φ=2 NEC channels).
 - **RSC iter 3 (2026-05-09)** — `verify/calc_dimjump.hexa` (Stage-6 T1 algebraic). 15/15 checks. Targets F-DIM-{1..3} T1 ✓ (6-rung ladder 4D→6D→10D→11D→24D→26D, R_c=12³·ℓ_Pl=1728·ℓ_Pl, E_fold=M_Pl·c²/(σ-φ)^d).
 - **RSC iter 4 (2026-05-09)** — `verify/calc_dimuse.hexa` (Stage-7 composite T1 algebraic). 16/16 checks. Targets F-USE-{1..4} T1 ✓ (warp σ-φ=10c × dim_compress σ-φ=10× = composite (σ-φ)²=100c, τ=4 cycle, sopfr(6)=5, α-Cen 0.5 spec-unit). **All 13 falsifiers (4 pillars) now T1 ✓**.
+- **RSC iter 5 (2026-05-09)** — `verify/numerics_warp.hexa` (Stage-4 T2 numerical bridge). 11/11 checks. Targets F-WARP-{1..3} T2 ✓ (math_pure SI re-derivation: ladder sub-luminal + c/φ=0.5c to 1e-9, δ=1.35e-36 m sub-Planck, VDB 1/144 ratio, Pfenning-Ford QI bound regimes split between Planck-allowed and macro-forbidden).
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 

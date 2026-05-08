@@ -4,6 +4,33 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 5 (Stage-4 warp T2; first numerical bridge)
+
+### Added (RSC iteration 5 — Stage-4 warp T2 numerical bridge)
+- `verify/numerics_warp.hexa` — Stage-4 warp pillar numerical SI
+  re-derivation (T2 numerical, math_pure-imported per recipe §4
+  invariant 1). 11/11 checks: §1 algebraic↔numerical consistency
+  (master σ·φ=n·τ=24, ladder all sub-luminal, c/φ=0.5c terminus
+  to 1e-9, ladder monotone, δ=ℓ_Pl/σ≈1.35e-36 m sub-Planck, VDB
+  ratio=1/σ²=1/144, VDB-reduced energy 6.94e9 M☉ between 1 M☉ and
+  M_galaxy) + §2 Pfenning-Ford QI bound regimes (τ_g=δ/c → 2.46e141
+  J·s Planck-regime; τ_g=1s → 1e-36 J·s macro-forbidden) + §3 spec
+  anchors (Pfenning-Ford 1997, c/φ=0.5c).
+  First numerical-tier (T2) chunk per recipe §4 invariants:
+    1. `use "self/runtime/math_pure"` ✓
+    2. `__HEXA_UFO_NUMERICS_WARP__` sentinel + PASS ✓
+    3. FALSIFIERS array ✓
+    4. exit(0) on PASS ✓
+    5. RUN/FAIL counters ✓
+
+### Closure milestone
+- F-WARP-{1..3} now T1 ✓ + T2 ✓ (one numerical anchor each).
+- Other pillars (F-WORM/F-DIM/F-USE) still T1-only.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 8/8 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 4 (Stage-7 dimuse T1; all 4 pillars T1 ✓)
 
 ### Added (RSC iteration 4 — Stage-7 dimuse composite T1 algebraic)
