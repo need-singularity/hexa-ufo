@@ -4,6 +4,24 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 2 (Stage-5 wormhole T1)
+
+### Added (RSC iteration 2 — Stage-5 wormhole T1 algebraic)
+- `verify/calc_wormhole.hexa` — Stage-5 Morris-Thorne wormhole pillar n=6
+  derived parameter calculator (T1 algebraic). 12/12 checks: 6 algebraic
+  identities (master σ·φ=n·τ=24, throat b₀=σ·ℓ_Pl=12 ℓ_Pl, traversal Δτ
+  factor (σ-φ)=10, ANEC denom 1/τ=1/4 Pfenning-Ford, NEC channels φ=2
+  Cataldo-Liempi, traversal·c product (σ-φ)·σ=120) + 6 spec-doc anchors
+  in `wormhole/hexa-wormhole.md` (b₀=σ·ℓ_Pl, traversal formula, ANEC,
+  φ=2 NEC channels, master identity, F-WORM-{1..3}).
+  Sentinel `__HEXA_UFO_CALC_WORMHOLE__ PASS`.
+- Wired into `verify/run_all.hexa` SCRIPTS array (4 → 5) +
+  `hexa.toml` `[closure].verify_scripts` 4 → 5 + `[modules].hexa`.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 5/5 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 1 (closure-depth accumulation start)
 
 ### Added (RSC iteration 1 — Stage-4 warp T1 algebraic)
