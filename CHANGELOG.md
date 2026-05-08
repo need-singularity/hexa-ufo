@@ -4,6 +4,33 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 12 (Stage-7 dimuse T3; **sat-1 reached**)
+
+### Added (RSC iteration 12 — Stage-7 dimuse composite T3 archival parity)
+- `verify/numerics_dimuse_parity.hexa` — Stage-7 composite warp+dimjump
+  pillar published-data parity (T3, **final T3 chunk**). 15/15 checks
+  against peer-reviewed literature: §1 published distance + traversal-
+  time canonicals (Hipparcos 1997 / Gaia DR2 α-Cen 4.37 ly + Sirius
+  8.6 ly anchored; α-Cen × 100c = 15.96 days ≈ BT-349 16d; Sirius =
+  31.4 days; CODATA 2018 c exact) + §2 2nd-law thermodynamics + chain
+  anchors (Clausius 1865 single-cycle E_warp/E_fold > 10³⁰ → F-USE-3
+  confirmed; warp + dimjump upstream chain length=2; sopfr OEIS A001414)
+  + §3 spec citation anchors (BT-347 Alcubierre upstream, BT-348 KK/CY₃
+  upstream, 2nd-law, UNPROVEN², α-Cen 16d).
+  Sentinel `__HEXA_UFO_NUMERICS_DIMUSE_PARITY__ PASS`.
+
+### **🛸 SAT-1 SATURATION REACHED 🛸**
+- F-USE-{1..4} now T1 ✓ + T2 ✓ + T3 ✓ → **100% closure**.
+- **Pillar status: F-WARP 100% · F-WORM 100% · F-DIM 100% · F-USE 100%.**
+- **All 13 falsifiers (4 pillars) at 100% (T1+T2+T3) — sat-1 condition met.**
+- Loop continues per recipe §7.2 — sat-2 (recipe-exhausted) not yet:
+  current 15 verify scripts vs recipe target ~16. Next iter targets
+  numerics_lattice_arithmetic / lint_numerics / saturation_check.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 15/15 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 11 (Stage-6 dimjump T3; 3/4 pillars 100%)
 
 ### Added (RSC iteration 11 — Stage-6 dimjump T3 archival empirical parity)
