@@ -21,6 +21,7 @@ let SCRIPTS: [str] = [
     "verify/numerics_dimuse.hexa",
     "verify/numerics_warp_parity.hexa",
     "verify/numerics_wormhole_parity.hexa",
+    "verify/numerics_dimjump_parity.hexa",
 ]
 
 fn main() {

@@ -4,6 +4,30 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 11 (Stage-6 dimjump T3; 3/4 pillars 100%)
+
+### Added (RSC iteration 11 — Stage-6 dimjump T3 archival empirical parity)
+- `verify/numerics_dimjump_parity.hexa` — Stage-6 dimjump pillar
+  published-data parity (T3). 13/13 checks against peer-reviewed
+  literature: §1 LHC + Eöt-Wash empirical bounds (m_KK·c² ≈ 4.24e13 TeV
+  vs LHC 14 TeV → 100× margin null compatible; R_c≈2.79e-32 m vs
+  Eöt-Wash 50 μm → 10²⁶ margin null compatible) + §2 critical-dim
+  ladder anchors (σ-φ=10D superstring CHSW 1985, σ-μ=11D M-theory,
+  J₂+φ=26D bosonic, τ=4D Kaluza 1921 base) + §3 KK quantisation +
+  CY₃ landscape + RS scope (m_KK∝1/R_c Klein 1926, 10⁵⁰⁰ landscape,
+  RS warped upper-bound) + §4 spec citation anchors (Kaluza 1921,
+  Klein 1926, CHSW 1985, Randall-Sundrum 1999).
+  Sentinel `__HEXA_UFO_NUMERICS_DIMJUMP_PARITY__ PASS`.
+
+### Closure milestone
+- F-DIM-{1..3} now T1 ✓ + T2 ✓ + T3 ✓ → **100% closure**.
+- Pillar status: F-WARP 100% · F-WORM 100% · F-DIM 100% · F-USE 67%.
+- **3/4 pillars saturated; 1 remaining (F-USE) for full sat-1.**
+
+### Verified
+- `hexa run verify/run_all.hexa` → 14/14 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 10 (Stage-5 wormhole T3)
 
 ### Added (RSC iteration 10 — Stage-5 wormhole T3 archival empirical parity)
