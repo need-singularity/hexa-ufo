@@ -50,6 +50,7 @@ DoD:
 ## §A.3 Cycle history
 
 - **Cycle 0 (2026-05-06)** — v1.0.0 initial extraction from n6-architecture@c0f1f570. Commit `8ea04e9`. 21 files / 8261 LOC.
+- **RSC iter 1 (2026-05-09)** — `verify/calc_warp.hexa` (Stage-4 T1 algebraic). 12/12 checks. closure-depth accumulation loop start per `~/core/bedrock/docs/runnable_surface_recipe.md` §7. Targets F-WARP-{1..3} T1 ✓.
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 

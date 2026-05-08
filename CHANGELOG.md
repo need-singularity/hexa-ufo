@@ -4,6 +4,26 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 1 (closure-depth accumulation start)
+
+### Added (RSC iteration 1 — Stage-4 warp T1 algebraic)
+- `verify/calc_warp.hexa` — Stage-4 warp pillar n=6 derived parameter
+  calculator (T1 algebraic tier per `~/core/bedrock/docs/runnable_surface_recipe.md`).
+  12/12 checks: 6 algebraic identities (master σ·φ=n·τ=24, VDB σ²=144,
+  Hc2-equiv σ·τ=48 cross-link to hexa-rtsc, ladder monotone +
+  terminus c/φ=0.5c + denominators ⊂ divisors(24)) + 6 spec-doc anchors
+  in `warp/hexa-warp.md` (R=n, δ=1/σ, σ²=144, σ·τ=48, c/σ→c/n→c/τ→c/φ
+  ladder, F-WARP-{1..3}). Sister of `hexa-cern/verify/calc_wakefield.hexa`.
+  Sentinel `__HEXA_UFO_CALC_WARP__ PASS`.
+- Wired into `verify/run_all.hexa` SCRIPTS array (3 → 4).
+- `hexa.toml` `[closure].verify_scripts` 3 → 4 + `[modules].hexa` adds
+  `verify/calc_warp.hexa`.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 4/4 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+- `hexa run tests/test_atlas_consistency.hexa` → PASS (10/10 verbs).
+
 ## [Unreleased] — 2026-05-07 (latest) — SF-소설 입문서 + 🛸ABSOLUTE = 𝔚 terminal upgrade
 
 ### Added
