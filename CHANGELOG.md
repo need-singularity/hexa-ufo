@@ -4,6 +4,27 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 7 (Stage-6 dimjump T2)
+
+### Added (RSC iteration 7 — Stage-6 dimjump T2 numerical bridge)
+- `verify/numerics_dimjump.hexa` — Stage-6 Calabi-Yau / Kaluza-Klein
+  dimjump pillar numerical SI re-derivation (T2). 10/10 checks: §1
+  algebraic↔numerical consistency (master σ·φ=n·τ=24, R_c=12³·ℓ_Pl
+  =1728·ℓ_Pl≈2.79e-32 m, E_fold(d=1)/M_Pl·c²=0.1=1/(σ-φ), ladder
+  values {4,6,10,11,24,26} match algebraic, monotone) + §2 empirical-
+  bound regimes (R_c≈2.8e-26× sub-mm sensitivity → null compatible;
+  m_KK·c²≈4.24e13 TeV ≫ LHC 14 TeV; E_fold(d=1)≈1.22e18 GeV ∈
+  [1e17,1e20]) + §3 spec anchors (LHC F-DIM-1, sub-mm F-DIM-2).
+  Sentinel `__HEXA_UFO_NUMERICS_DIMJUMP__ PASS`.
+
+### Closure milestone
+- F-DIM-{1..3} now T1 ✓ + T2 ✓.
+- Pillar status: F-WARP T1+T2 · F-WORM T1+T2 · F-DIM T1+T2 · F-USE T1.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 10/10 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 6 (Stage-5 wormhole T2)
 
 ### Added (RSC iteration 6 — Stage-5 wormhole T2 numerical bridge)
