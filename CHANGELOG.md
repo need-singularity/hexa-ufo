@@ -4,6 +4,27 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 6 (Stage-5 wormhole T2)
+
+### Added (RSC iteration 6 — Stage-5 wormhole T2 numerical bridge)
+- `verify/numerics_wormhole.hexa` — Stage-5 Morris-Thorne wormhole pillar
+  numerical SI re-derivation (T2). 10/10 checks: §1 algebraic↔numerical
+  consistency (master σ·φ=n·τ=24, throat b₀=σ·ℓ_Pl≈1.94e-34 m,
+  Δτ=120·t_Pl≈6.47e-42 s sub-Planck-time, NEC channels φ=2,
+  ANEC 1/τ=0.25) + §2 Pfenning-Ford ANEC bound regimes (Planck-throat
+  ANEC≈5.6e108 J·s/m² huge; macro b₀=1m → 7.9e-27 J·s/m² forbidden;
+  b₀⁻⁴ scaling exact 16× factor) + §3 spec anchors (Pfenning-Ford,
+  Hawking 1992 chronology protection).
+  Sentinel `__HEXA_UFO_NUMERICS_WORMHOLE__ PASS`.
+
+### Closure milestone
+- F-WORM-{1..3} now T1 ✓ + T2 ✓ (Pfenning-Ford ANEC numerical anchor).
+- F-WARP T1+T2 ✓; F-WORM T1+T2 ✓; F-DIM T1-only; F-USE T1-only.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 9/9 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 5 (Stage-4 warp T2; first numerical bridge)
 
 ### Added (RSC iteration 5 — Stage-4 warp T2 numerical bridge)

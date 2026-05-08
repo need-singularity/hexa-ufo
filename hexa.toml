@@ -56,6 +56,7 @@ hexa = [
     "verify/calc_dimjump.hexa",
     "verify/calc_dimuse.hexa",
     "verify/numerics_warp.hexa",
+    "verify/numerics_wormhole.hexa",
     "verify/run_all.hexa",
 ]
 docs = [
@@ -94,7 +95,7 @@ propulsion_stages_total = 7
 propulsion_stages_substrate_grounded = 7
 propulsion_stages_tbd = 0
 falsifiers_preregistered = 13
-verify_scripts = 8
+verify_scripts = 9
 verdict = "ATLAS_PASS_PROPULSION_FULL"
 extracted_from = "n6-architecture/domains/sf-ufo/ @ 2026-05-06 (SHA c0f1f570)"
 stage_4_to_7_integrated = "2026-05-07 (medium integration: spec.md + verify/* in-tree, separate sister repos collapsed)"
