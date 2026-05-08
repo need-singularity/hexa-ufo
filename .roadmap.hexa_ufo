@@ -58,6 +58,7 @@ DoD:
 - **RSC iter 6 (2026-05-09)** — `verify/numerics_wormhole.hexa` (Stage-5 T2 numerical bridge). 10/10 checks. Targets F-WORM-{1..3} T2 ✓ (Pfenning-Ford ANEC bound numerical: Planck-throat 5.6e108 J·s/m² huge / macro b₀=1m 7.9e-27 J·s/m² forbidden / b₀⁻⁴ scaling exact).
 - **RSC iter 7 (2026-05-09)** — `verify/numerics_dimjump.hexa` (Stage-6 T2 numerical bridge). 10/10 checks. Targets F-DIM-{1..3} T2 ✓ (R_c=1728·ℓ_Pl≈2.79e-32 m sub-mm sensitivity 26 OOM below; m_KK·c²≈4.24e13 TeV ≫ LHC 14 TeV; E_fold(d=1)≈1.22e18 GeV).
 - **RSC iter 8 (2026-05-09)** — `verify/numerics_dimuse.hexa` (Stage-7 composite T2 numerical bridge). 12/12 checks. Targets F-USE-{1..4} T2 ✓ (α-Cen 4.37 ly/100c = 15.96 days ≈ BT-349 canonical 16 days; E_warp/E_fold ≈ 6.3e36 → single-cycle 2nd-law violation regime confirmed for F-USE-3). **All 13 falsifiers (4 pillars) now T1 ✓ + T2 ✓**.
+- **RSC iter 9 (2026-05-09)** — `verify/numerics_warp_parity.hexa` (Stage-4 T3 archival empirical parity). 10/10 checks against published references: Casimir 1948 / Lamoreaux 1997 / Bressi 2002 / Decca 2007 (F/A(1μm)≈1.30 mPa, d⁻⁴ exact); Pfenning-Ford 1997 prefactor 3/(32π²)≈0.0095; Van Den Broeck 1999 σ²=144. **F-WARP-{1..3} T1+T2+T3 = 100% closure**.
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 

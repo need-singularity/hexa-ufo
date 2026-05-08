@@ -4,6 +4,29 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 9 (Stage-4 warp T3; first parity tier)
+
+### Added (RSC iteration 9 — Stage-4 warp T3 archival empirical parity)
+- `verify/numerics_warp_parity.hexa` — Stage-4 warp pillar published-data
+  parity (T3, archival empirical contact). 10/10 checks against
+  peer-reviewed literature: §1 Casimir-force parity (Lamoreaux 1997
+  F/A(1μm)≈1.3 mPa; Bressi 2002 F/A(100nm)≈13 Pa; Decca 2007 d⁻⁴ scaling
+  exact 10⁴ ratio) + §2 n=6 spec parity (ρ_n6/ρ_actual = 720/(τ·π²) ≈
+  18.24 d-independent constant) + §3 Pfenning-Ford 1997 QI prefactor
+  3/(32π²) ≈ 0.00950 + Van Den Broeck 1999 σ²=144 + §4 spec citation
+  anchors (Casimir 1948, Pfenning-Ford 1997, Van Den Broeck 1999).
+  Sentinel `__HEXA_UFO_NUMERICS_WARP_PARITY__ PASS`.
+
+### Closure milestone
+- F-WARP-{1..3} now T1 ✓ + T2 ✓ + T3 ✓ → **100% closure (Casimir/Lamoreaux/
+  Bressi/Decca/Pfenning-Ford/VDB anchored)**.
+- Pillar status: F-WARP T1+T2+T3 (100%) · F-WORM T1+T2 (67%) ·
+  F-DIM T1+T2 (67%) · F-USE T1+T2 (67%).
+
+### Verified
+- `hexa run verify/run_all.hexa` → 12/12 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 8 (Stage-7 dimuse T2; all 4 pillars T1+T2)
 
 ### Added (RSC iteration 8 — Stage-7 dimuse composite T2 numerical bridge)
