@@ -69,6 +69,7 @@ let NUMERICS_SCRIPTS: [str] = [
     "numerics_wormhole_parity.hexa",
     "numerics_dimjump_parity.hexa",
     "numerics_dimuse_parity.hexa",
+    "numerics_lattice_arithmetic.hexa",
 ]
 
 // Required substrings per recipe §4

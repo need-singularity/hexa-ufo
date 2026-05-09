@@ -4,6 +4,33 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 16 (numerics_lattice_arithmetic; cross-cutter)
+
+### Added (RSC iteration 16 — recipe §7.4 priority 8 cross-cutter)
+- `verify/numerics_lattice_arithmetic.hexa` — n=6 lattice float ↔ int
+  precision cross-check (post-saturation chunk per user direction).
+  13/13 checks at sub-1e-9 tolerance: §1 sqrt/pow precision (sqrt(144)=12,
+  sqrt(100)=10, pow(σ,2)=144, pow(σ,3)=1728, pow(σ-φ,2)=100) + §2 master
+  identity float (σ·φ=n·τ=24, σ·τ=48 Hc2-equiv) + §3 dim-ladder rungs
+  (4, 6, 10, 11, 24, 26 all int=float) + §4 log/exp round-trip (σ
+  rel_err=1.5e-16, 100 rel_err=0) + §5 int-vs-float anchor agreement.
+  Sister of hexa-cern/verify/numerics_lattice_arithmetic.hexa.
+  Sentinel `__HEXA_UFO_NUMERICS_LATTICE_ARITHMETIC__ PASS`.
+- Wired into `verify/run_all.hexa` (18 → 19) + `verify/lint_numerics.hexa`
+  NUMERICS_SCRIPTS array (8 → 9) + `hexa.toml` `[closure].verify_scripts`
+  18 → 19 + `[modules].hexa`.
+
+### Why post-saturation
+- math_pure precision floor regression slot — if math_pure drifts, every
+  downstream numerics_* is contaminated. This script gives the drift its
+  own dedicated regression target so a precision regression is caught at
+  the lattice anchor layer, not buried in pillar-specific numerics.
+
+### Verified
+- `hexa run verify/numerics_lattice_arithmetic.hexa` → 13/13 PASS.
+- `hexa run verify/lint_numerics.hexa` → 46/46 PASS (9 numerics scripts).
+- `hexa run verify/run_all.hexa` → 19/19 PASS.
+
 ## [Unreleased] — 2026-05-09 — 🛸 RSC iter 15 (saturation_check; canonical STOP signal)
 
 ### Added (RSC iteration 15 — recipe §7.4 priority 15 self-stop signal)
