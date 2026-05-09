@@ -89,9 +89,9 @@ versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 - `tests/test_stages_propulsion.hexa` — inner `hexa run` calls now use
-  `$HOME/.hx/packages/hexa/hexa.real` direct path + `touch ~/.resource-off`
-  prefix to bypass alias→TCP route + daemon-deletion race. Prevents
-  spurious FAIL when called from outer test wrapper (test_all).
+  `$HOME/.hx/packages/hexa/hexa.real` direct path to bypass alias→TCP
+  route. Prevents spurious FAIL when called from outer test wrapper
+  (test_all).
 
 ### Wired
 - `hexa.toml [test].files`: 3 → 4 (adds test_all.hexa).

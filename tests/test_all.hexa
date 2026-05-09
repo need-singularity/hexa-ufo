@@ -54,9 +54,6 @@ fn run_one(case: str) -> bool {
     let sentinel = parts[1]
     let path = ROOT + "/tests/" + fname
 
-    // touch ~/.resource-off before each invocation (daemon may have deleted it)
-    exec("touch " + HOME + "/.resource-off 2>/dev/null")
-
     let cmd = "HEXA_UFO_ROOT=" + shq(ROOT) + " " + _timeout_prefix() +
               shq(HEXA) + " run " + shq(path)
     let r = exec_with_status(cmd)

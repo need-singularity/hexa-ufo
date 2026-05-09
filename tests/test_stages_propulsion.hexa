@@ -22,15 +22,11 @@ let HU = hexa_ufo_root()
 let CLI = HU + "/cli/hexa-ufo.hexa"
 
 fn run_rc(cmd: str) -> int {
-    // touch ~/.resource-off — daemon may have deleted it between calls; the
-    // hexa.real binary itself doesn't need it, but inner sister-CLI calls do.
-    exec("touch " + HOME + "/.resource-off 2>/dev/null")
     let rc = exec(cmd + " >/dev/null 2>&1; echo $?").trim()
     return int(rc)
 }
 
 fn run_capture(cmd: str) -> str {
-    exec("touch " + HOME + "/.resource-off 2>/dev/null")
     return exec(cmd + " 2>&1")
 }
 

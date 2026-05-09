@@ -96,7 +96,6 @@ $(PDF_ATLAS): $(ROOT)/ufo/doc/hexa-ufo.md | $(OUT)
 # hexa-ufo n=6 audit; useful pre-PDF as a regression gate.
 verify:
 	@echo "[build] running: hexa-ufo verify (run_all aggregate)"
-	@touch $(HOME)/.resource-off
 	@HEXA_UFO_ROOT=$(realpath $(ROOT)) $(HEXA) run $(ROOT)/cli/hexa-ufo.hexa verify
 
 clean:

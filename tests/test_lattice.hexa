@@ -40,9 +40,6 @@ fn _timeout_prefix() -> str {
 fn main() {
     println("[test_lattice] script: " + SCRIPT)
 
-    // touch ~/.resource-off — daemon may have deleted it between calls
-    exec("touch " + HOME + "/.resource-off 2>/dev/null")
-
     let cmd = "HEXA_UFO_ROOT=" + shq(ROOT) + " " + _timeout_prefix() +
               shq(HEXA) + " run " + shq(SCRIPT)
     let r = exec_with_status(cmd)
