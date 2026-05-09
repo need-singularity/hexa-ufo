@@ -31,6 +31,7 @@ let CASES: [str] = [
     "test_atlas_consistency.hexa|__HEXA_UFO_ATLAS_CONSISTENCY__ PASS",
     "test_stages_propulsion.hexa|__HEXA_UFO_STAGES_PROPULSION__ PASS",
     "test_calculators.hexa|__HEXA_UFO_TEST_CALCULATORS__ PASS",
+    "test_lattice.hexa|__HEXA_UFO_TEST_LATTICE__ PASS",
 ]
 
 fn shq(s: str) -> str {

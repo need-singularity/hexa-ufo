@@ -32,6 +32,7 @@ files = [
     "tests/test_atlas_consistency.hexa",
     "tests/test_stages_propulsion.hexa",
     "tests/test_calculators.hexa",
+    "tests/test_lattice.hexa",
     "tests/test_all.hexa",
 ]
 

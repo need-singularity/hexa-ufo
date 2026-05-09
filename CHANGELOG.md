@@ -4,6 +4,22 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 20 (test_lattice; explicit lattice regression)
+
+### Added (RSC iteration 20 — recipe §1 test_lattice)
+- `tests/test_lattice.hexa` — n=6 lattice closure regression test.
+  Wraps `verify/lattice_check.hexa` and asserts exit 0 + the `10/10 PASS`
+  marker (legacy script — pre-recipe-§4 sentinel convention). 60s
+  timeout per case (small script). Sister of
+  hexa-cern/tests/test_lattice.hexa.
+  Sentinel `__HEXA_UFO_TEST_LATTICE__ PASS`.
+- Wired into `tests/test_all.hexa` CASES (3 → 4) +
+  `hexa.toml [test].files` (4 → 5).
+
+### Verified
+- `hexa run tests/test_lattice.hexa` → PASS.
+- `hexa run tests/test_all.hexa` → 4/4 sub-tests PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 19 (test_all; top-level test aggregator)
 
 ### Added (RSC iteration 19 — recipe §1 test_all aggregator)
