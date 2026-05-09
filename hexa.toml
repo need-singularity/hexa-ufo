@@ -91,6 +91,7 @@ docs = [
     "docs/meta-closure-nav/README.md",
     "docs/numerics_methodology.md",
     "docs/t4_hardware_explainer.md",
+    "docs/hexa_ecosystem_survey.md",
 ]
 
 # ── Dependencies ───────────────────────────────────────────
