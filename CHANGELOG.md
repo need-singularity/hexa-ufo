@@ -4,6 +4,30 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 13 (선행도메인 CLI cross-link)
+
+### Added (RSC iteration 13 — Stage-1/2/3 upstream sister CLI cross-link)
+- `verify/cross_link_upstream.hexa` — wires hexa-ufo's Stage-1/2/3 to
+  upstream sister-repo CLIs (선행도메인) per user direction. 6/6 checks:
+  §1 sister CLI files reachable (hexa-rtsc.hexa, hexa-fusion.hexa,
+  hexa-antimatter.hexa) + §2 functional cross-link via `selftest`
+  invocation (each upstream CLI exits 0 + emits its domain signature
+  token). Stage-1 hover→hexa-rtsc Meissner / Stage-2 cruise→hexa-fusion
+  MHD / Stage-3 orbital→hexa-antimatter γ-rocket. Sentinel
+  `__HEXA_UFO_CROSS_LINK_UPSTREAM__ PASS`.
+- Wired into `verify/run_all.hexa` (15 → 16) + `hexa.toml`
+  `[closure].verify_scripts` 15 → 16 + `[modules].hexa`.
+
+### Note
+- Sat-1 (4 pillars × T1+T2+T3 = 100%) was already reached in iter 12.
+- Sat-2 (recipe-exhausted) approaches with this iter — 16 verify scripts
+  reaches recipe target. `lint_numerics.hexa` (recipe priority 10)
+  still pending for full meta-lint compliance.
+
+### Verified
+- `hexa run verify/run_all.hexa` → 16/16 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 12 (Stage-7 dimuse T3; **sat-1 reached**)
 
 ### Added (RSC iteration 12 — Stage-7 dimuse composite T3 archival parity)
