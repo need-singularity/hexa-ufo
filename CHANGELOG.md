@@ -4,6 +4,31 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 19 (test_all; top-level test aggregator)
+
+### Added (RSC iteration 19 — recipe §1 test_all aggregator)
+- `tests/test_all.hexa` — top-level test runner. Runs all 3
+  tests/test_*.hexa scripts with 8-min per-case timeout and aggregates
+  exit codes + sentinel matches. 3/3 PASS:
+    test_atlas_consistency  (10/10 verbs)
+    test_stages_propulsion  (verify+selftest+lattice)
+    test_calculators        (20/20 verify regressions)
+  Sister of hexa-cern/tests/test_all.hexa.
+  Sentinel `__HEXA_UFO_TEST_ALL__ PASS`.
+
+### Fixed
+- `tests/test_stages_propulsion.hexa` — inner `hexa run` calls now use
+  `$HOME/.hx/packages/hexa/hexa.real` direct path + `touch ~/.resource-off`
+  prefix to bypass alias→TCP route + daemon-deletion race. Prevents
+  spurious FAIL when called from outer test wrapper (test_all).
+
+### Wired
+- `hexa.toml [test].files`: 3 → 4 (adds test_all.hexa).
+
+### Verified
+- `hexa run tests/test_all.hexa` → 3/3 sub-tests PASS.
+- `hexa run verify/run_all.hexa` → 20/20 PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 18 (test_calculators; full RSC surface regression)
 
 ### Added (RSC iteration 18 — recipe §1 test layer expansion)

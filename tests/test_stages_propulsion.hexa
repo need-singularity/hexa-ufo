@@ -22,11 +22,15 @@ let HU = hexa_ufo_root()
 let CLI = HU + "/cli/hexa-ufo.hexa"
 
 fn run_rc(cmd: str) -> int {
+    // touch ~/.resource-off — daemon may have deleted it between calls; the
+    // hexa.real binary itself doesn't need it, but inner sister-CLI calls do.
+    exec("touch " + HOME + "/.resource-off 2>/dev/null")
     let rc = exec(cmd + " >/dev/null 2>&1; echo $?").trim()
     return int(rc)
 }
 
 fn run_capture(cmd: str) -> str {
+    exec("touch " + HOME + "/.resource-off 2>/dev/null")
     return exec(cmd + " 2>&1")
 }
 
@@ -35,19 +39,19 @@ fn main() {
     println("")
 
     println("[1] verify/run_all.hexa")
-    let rc1 = run_rc("hexa run " + HU + "/verify/run_all.hexa")
+    let rc1 = run_rc(HOME + "/.hx/packages/hexa/hexa.real run " + HU + "/verify/run_all.hexa")
     let v1 = (rc1 == 0)
     println("    rc=" + str(rc1) + " — " + (if v1 { "PASS" } else { "FAIL" }))
 
     println("")
     println("[2] cli/hexa-ufo selftest")
-    let rc2 = run_rc("hexa run " + CLI + " selftest")
+    let rc2 = run_rc(HOME + "/.hx/packages/hexa/hexa.real run " + CLI + " selftest")
     let v2 = (rc2 == 0)
     println("    rc=" + str(rc2) + " — " + (if v2 { "PASS" } else { "FAIL" }))
 
     println("")
     println("[3] cli/hexa-ufo lattice --json (master identity holds)")
-    let out3 = run_capture("hexa run " + CLI + " lattice --json")
+    let out3 = run_capture(HOME + "/.hx/packages/hexa/hexa.real run " + CLI + " lattice --json")
     let v3 = out3.contains("\"holds\":true")
     println("    " + (if v3 { "PASS — n=6 master identity holds" } else { "FAIL — out=" + out3 }))
 

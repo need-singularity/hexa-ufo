@@ -68,6 +68,7 @@ DoD:
 - **RSC iter 16 (2026-05-09)** — `verify/numerics_lattice_arithmetic.hexa` (post-saturation cross-cutter, recipe §7.4 priority 8). 13/13 checks at sub-1e-9 tolerance: math_pure sqrt/pow/log/exp precision floor + int-vs-float anchor agreement on σ², σ³, (σ-φ)², ladder rungs. Closes math_pure precision regression slot for all downstream numerics_*.
 - **RSC iter 17 (2026-05-09)** — `verify/numerics_cross_pillar.hexa` (post-saturation cross-cutter, recipe §7.4 priority 7). 9/9 checks at sub-1e-12 tolerance: c/ℓ_Pl universal across 3-4 pillars; σ-φ=10 / σ²=144 / 1/τ=0.25 shared anchors verify identical numerical value across pillars; dimuse 100c = warp 10c × dimjump 10× composite decomposition. Recipe-wide n=6 drift detector.
 - **RSC iter 18 (2026-05-09)** — `tests/test_calculators.hexa` (recipe §1 test layer expansion, priority 11). 20/20 (filename, sentinel) regressions across full RSC surface (T1+T2+T3+cross-cutters+meta+선행도메인). 5-min timeout per case with SKIP-on-timeout (exit=124). Wired into `hexa.toml [test].files`.
+- **RSC iter 19 (2026-05-09)** — `tests/test_all.hexa` (recipe §1 top-level test aggregator). 3/3 sub-tests PASS (atlas + stages_propulsion + calculators). Fixed test_stages_propulsion.hexa to use `.hx/packages/hexa/hexa.real` direct path + touch `~/.resource-off` prefix → bypasses alias→TCP race when called from outer test wrapper. Wired into `hexa.toml [test].files` (4 tests total).
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 
