@@ -4,6 +4,22 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 21 (test_cli_verify; CLI surface regression)
+
+### Added (RSC iteration 21 — recipe §1 test_cli_verify)
+- `tests/test_cli_verify.hexa` — CLI surface regression. 4/4 checks:
+  cli verify aggregate (run_all delegation OK), cli status (propulsion
+  stack + F-WARP/F-USE falsifiers present), cli lattice --json
+  (master identity holds:true), cli selftest (__HEXA_UFO_SELFTEST__ PASS).
+  Validates user-facing CLI surface faithfully exposes the underlying
+  verify contract — catches dispatcher refactors that silently skip
+  verify scripts. Sister of hexa-cern/tests/test_cli_verify.hexa.
+  Sentinel `__HEXA_UFO_TEST_CLI_VERIFY__ PASS`.
+- Wired into `tests/test_all.hexa` (5 cases) + `hexa.toml [test].files` (6 tests).
+
+### Verified
+- `hexa run tests/test_cli_verify.hexa` → 4/4 PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 20 (test_lattice; explicit lattice regression)
 
 ### Added (RSC iteration 20 — recipe §1 test_lattice)
