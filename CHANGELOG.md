@@ -4,6 +4,35 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 18 (test_calculators; full RSC surface regression)
+
+### Added (RSC iteration 18 — recipe §1 test layer expansion)
+- `tests/test_calculators.hexa` — runs all 20 verify scripts and asserts
+  each emits its per-script PASS sentinel + exits 0. Per-section
+  coverage: §1 T1 algebraic (lattice + cross_doc + falsifier + 4× calc)
+  + §2 T2 numerical (4× numerics) + §3 T3 parity (4× parity) + §4
+  cross-cutters (lattice_arithmetic + cross_pillar) + §5 meta (lint +
+  saturation_check) + §6 선행도메인 cross_link. 20/20 PASS.
+  Includes 5-min timeout (gtimeout/timeout) → exit 124 = SKIP rather
+  than FAIL (e.g. cross_link_upstream invokes 3 sister CLI selftests
+  which can be slow on cold mac).
+  Sister of hexa-cern/tests/test_calculators.hexa.
+  Sentinel `__HEXA_UFO_TEST_CALCULATORS__ PASS`.
+- Wired into `hexa.toml` `[test].files` (now 3 test files: atlas +
+  stages_propulsion + this).
+
+### Why post-saturation
+- Recipe §1 specifies `tests/test_calculators.hexa` as the canonical
+  per-pillar regression aggregator. Skipped during the main 14-iter
+  closure path (used per-iter `verify/run_all.hexa` instead). Now
+  added for explicit `(filename, sentinel)` contract enforcement —
+  if any verify script's sentinel ever drifts, this test catches it
+  at the test layer (CI-friendly).
+
+### Verified
+- `hexa run tests/test_calculators.hexa` → 20/20 PASS.
+- `hexa run verify/run_all.hexa` → 20/20 PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 17 (numerics_cross_pillar; cross-cutter)
 
 ### Added (RSC iteration 17 — recipe §7.4 priority 7 cross-cutter)
