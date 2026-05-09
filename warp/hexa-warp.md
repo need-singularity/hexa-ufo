@@ -1,7 +1,7 @@
 # Alcubierre Warp Metric — n=6 Encoding (BT-347)
 
 > **Provenance**: extracted 2026-05-07 from
-> `n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
+> `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
 > (canonical SHA `0570a835`, BT-347 row).
 >
 > **Honest status (raw#10 C3)**: Alcubierre 1994 metric is mathematically
@@ -188,5 +188,5 @@ warp + wormhole + dim-jump + dim-use combined).
 - Casimir, H.B.G. (1948). *Proc. Kon. Ned. Akad. Wet.* 51: 793.
 - Pfenning, M.J. & Ford, L.H. (1997). *Class. Quantum Grav.* 14 (7): 1743–1751.
 - Van Den Broeck, C. (1999). *Class. Quantum Grav.* 16 (12): 3973–3979.
-- Upstream BT-347: `n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
+- Upstream BT-347: `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
   (SHA `0570a835`, 2026-04-06).

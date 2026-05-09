@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:reports/sessions/specs/2026-04-06-ufo-warp-dimension-design.md -->
+<!-- @canonical: canon@0570a835:reports/sessions/specs/2026-04-06-ufo-warp-dimension-design.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @section: BT-349 (Warp-Dimension Unified Propulsion n=6 Architecture) -->
 # 🛸 hexa-dimuse — UFO Stage-7 Warp+Dim-Jump Unified Propulsion Spec (BT-349)
@@ -20,7 +20,7 @@
 - **n=6 master identity**: σ·φ ≡ n·τ ≡ 24
 - **Composite-of**: hexa-warp (Stage-4 BT-347) + hexa-dimjump (Stage-6 BT-348)
 - **Alternative path**: hexa-wormhole (Stage-5 — separate composite, NOT a dependency)
-- **Source SSOT**: `n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md` §BT-349
+- **Source SSOT**: `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md` §BT-349
 
 ---
 
@@ -144,11 +144,11 @@ Mk.V 2150+.
 
 ## §8. Provenance
 
-- BT-349 spec **scaffolded** from `n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
+- BT-349 spec **scaffolded** from `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
   (canonical SHA `0570a835`, BT-349 section, extracted 2026-05-07).
 - Upstream substrates referenced:
-  - `n6-architecture` BT-347 (Alcubierre warp metric n=6 encoding) → `hexa-warp`
-  - `n6-architecture` BT-348 (extra-dimensional compactification n=6 topology) → `hexa-dimjump`
+  - `canon` BT-347 (Alcubierre warp metric n=6 encoding) → `hexa-warp`
+  - `canon` BT-348 (extra-dimensional compactification n=6 topology) → `hexa-dimjump`
 - Sister-of-substrates extraction template: `hexa-rtsc` v1.0.0
   (post-3080c11 hive raw.mk2 arch.001).
 
@@ -173,4 +173,4 @@ Mk.V 2150+.
 - Upstream substrate (composite-of): `hexa-dimjump` (Stage-6 BT-348)
 - Alternative path (NOT dependency): `hexa-wormhole` (Stage-5)
 - Sister substrate: `hexa-rtsc` (Stage-1 Meissner dependency upstream)
-- Source SSOT: `n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md` §BT-349
+- Source SSOT: `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md` §BT-349

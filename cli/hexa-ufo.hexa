@@ -363,7 +363,7 @@ fn cmd_selftest(a: [str]) {
 
 fn cmd_version() {
     println("hexa-ufo " + VERSION)
-    println("standalone UFO Substrate Atlas (extracted from n6-architecture@c0f1f570 on 2026-05-06)")
+    println("standalone UFO Substrate Atlas (extracted from canon@c0f1f570 on 2026-05-06)")
     println("license: MIT")
     println("repo:    https://github.com/dancinlab/hexa-ufo")
 }

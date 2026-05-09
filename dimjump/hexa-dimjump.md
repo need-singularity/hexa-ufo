@@ -1,7 +1,7 @@
 # Extra-Dimensional Compactification — n=6 Topology (BT-348)
 
 > **Canonical SSOT** for `hexa-dimjump`. Extracted 2026-05-07 from
-> `n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
+> `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
 > (BT-348 section). UFO **Stage-6** substrate.
 
 ---
@@ -201,7 +201,7 @@ Silent retract is forbidden.
 ## §10 Lineage
 
 Imported 2026-05-07 from
-`n6-architecture/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
+`canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
 (BT-348 section). See [`../doc/lineage/origin.md`](../doc/lineage/origin.md)
 for full provenance manifest.
 

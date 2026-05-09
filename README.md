@@ -22,7 +22,7 @@
 [![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8ABSOLUTE_%3D_%F0%9D%94%9A-purple.svg)](docs/meta-closure-nav/README.md)
 
 > **Provenance**: extracted from
-> `n6-architecture/domains/sf-ufo/` at SHA `c0f1f570` on **2026-05-06**.
+> `canon/domains/sf-ufo/` at SHA `c0f1f570` on **2026-05-06**.
 > Sister to `dancinlab/hexa-bio` (molecular toolkit) standalone pattern.
 
 ---

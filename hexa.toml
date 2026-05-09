@@ -2,7 +2,7 @@
 #
 # Spec: shared/hexa-lang/hexa-toml-spec.json (version 1.0.0)
 # Distribution target: hx install hexa-ufo
-# Provenance: extracted from n6-architecture/domains/sf-ufo/ on 2026-05-06
+# Provenance: extracted from canon/domains/sf-ufo/ on 2026-05-06
 #             (n6-arch SHA c0f1f570; sister to hexa-bio standalone)
 
 [package]
@@ -116,7 +116,7 @@ falsifiers_preregistered = 13
 verify_scripts = 20
 rsc_saturated = "sat-1 + sat-2 + sat-3 (2026-05-09 · 17/17 saturation_check PASS · STOP signal)"
 verdict = "ATLAS_PASS_PROPULSION_FULL"
-extracted_from = "n6-architecture/domains/sf-ufo/ @ 2026-05-06 (SHA c0f1f570)"
+extracted_from = "canon/domains/sf-ufo/ @ 2026-05-06 (SHA c0f1f570)"
 stage_4_to_7_integrated = "2026-05-07 (medium integration: spec.md + verify/* in-tree, separate sister repos collapsed)"
 
 # ── Scope honesty ─────────────────────────────────────────

@@ -3,10 +3,10 @@
 ## Summary
 
 `hexa-ufo` v1.0.0 is the **initial standalone extraction** of the
-`n6-architecture/domains/sf-ufo/` substrate-atlas tree into a public,
+`canon/domains/sf-ufo/` substrate-atlas tree into a public,
 MIT-licensed repository under the `dancinlab` GitHub organization.
 
-- Source: `n6-architecture` SHA `c0f1f570`
+- Source: `canon` SHA `c0f1f570`
 - Extraction date: 2026-05-06
 - Sister pattern: `dancinlab/hexa-bio` (molecular toolkit standalone)
 

@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@0570a835:reports/sessions/specs/2026-04-06-ufo-warp-dimension-design.md -->
+<!-- @canonical: canon@d1640e62:reports/sessions/specs/2026-04-06-ufo-warp-dimension-design.md -->
 <!-- @extracted: 2026-05-06 -->
 <!-- @md5_at_extraction: d670d2ce587ed404fa709d4751680935 -->
 # HEXA-UFO Warp + Dimension-Jump Breakthrough Design Spec

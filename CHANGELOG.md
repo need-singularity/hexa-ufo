@@ -648,7 +648,7 @@ Meta-lint compliance: **8/8 numerics scripts pass §4 invariant audit**.
 - 4 in-tree Stage-4~7 substrate spec docs (medium integration: spec + verify
   in-tree, separate sister repos collapsed):
   - `warp/hexa-warp.md` — Stage-4 Alcubierre warp metric (BT-347 from
-    `n6-architecture@0570a835` warp-dimension-design spec)
+    `canon@0570a835` warp-dimension-design spec)
   - `wormhole/hexa-wormhole.md` — Stage-5 Morris-Thorne traversable wormhole
   - `dimjump/hexa-dimjump.md` — Stage-6 Calabi-Yau / Kaluza-Klein 4D→26D ladder (BT-348)
   - `dimuse/hexa-dimuse.md` — Stage-7 τ=4 (σ−φ)²=100c composite (BT-349)
@@ -697,7 +697,7 @@ Meta-lint compliance: **8/8 numerics scripts pass §4 invariant audit**.
 ## [1.0.0] — 2026-05-06
 
 ### Added
-- Initial extraction from `n6-architecture/domains/sf-ufo/` at SHA `c0f1f570`.
+- Initial extraction from `canon/domains/sf-ufo/` at SHA `c0f1f570`.
 - 6-verb DOC-grade atlas: `ufo` (1890 LOC main atlas) + `grav` / `hover` /
   `cloak` / `teleport` / `sim` propulsion sub-axis docs.
 - 7-stage propulsion stack table (Stage-1 Meissner → Stage-7 Calabi-Yau).

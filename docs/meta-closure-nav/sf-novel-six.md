@@ -1,5 +1,5 @@
 <!-- @canonical: composed 2026-04-21 in response to "일반인이 이해하기 쉽게 설명좀 sf 소설이나 이런걸로 설명" -->
-<!-- @upstream-canon-commit: dancinlab/n6-architecture@35731245 — feat(ufo-🛸무한대+): Δ₀-absolute 정리 + ULTRA/CARD/BEYOND/ABS 4 계층 -->
+<!-- @upstream-canon-commit: dancinlab/canon@35731245 — feat(ufo-🛸무한대+): Δ₀-absolute 정리 + ULTRA/CARD/BEYOND/ABS 4 계층 -->
 <!-- @companion-ref: ./meta-closure-nav.md (canon SHA 50f41e71 — 968-LOC mathematical companion) -->
 
 # 🛸 "여섯 번째 법" — 은하 문명 대사전 발췌
