@@ -90,6 +90,7 @@ docs = [
     "docs/meta-closure-nav/sf-novel-six.md",
     "docs/meta-closure-nav/README.md",
     "docs/numerics_methodology.md",
+    "docs/t4_hardware_explainer.md",
 ]
 
 # ── Dependencies ───────────────────────────────────────────
