@@ -4,6 +4,36 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 17 (numerics_cross_pillar; cross-cutter)
+
+### Added (RSC iteration 17 — recipe §7.4 priority 7 cross-cutter)
+- `verify/numerics_cross_pillar.hexa` — pillar↔pillar numerical anchor
+  consistency check (post-saturation chunk per user direction). 9/9
+  checks at sub-1e-12 tolerance: §1 universal physical constants
+  identical (c via 2·c/φ; ℓ_Pl via warp δ·σ / wormhole b₀/σ /
+  dimjump R_c/σ³ all = 1.616e-35 m) + §2 σ-φ=10 shared by 4 anchors
+  (worm trav / dim 10D / use warp / use dim_compress) + §3 composite
+  decomposition (dimuse 100c = warp 10c × dimjump 10×) + §4 Pfenning-
+  Ford 1/τ=0.25 shared by warp QI + wormhole ANEC + §5 master identity
+  σ·φ=n·τ=24 universal + §6 VDB σ²=144 shared warp/dimuse + §7
+  Planck-derivative chain (warp δ/c = t_Pl/σ = 4.49e-45 s).
+  Sister of hexa-cern/verify/numerics_cross_pillar.hexa.
+  Sentinel `__HEXA_UFO_NUMERICS_CROSS_PILLAR__ PASS`.
+- Wired into `verify/run_all.hexa` (19 → 20) +
+  `verify/lint_numerics.hexa` NUMERICS_SCRIPTS array (9 → 10) +
+  `hexa.toml` `[closure].verify_scripts` 19 → 20 + `[modules].hexa`.
+
+### Why post-saturation
+- Cross-pillar drift detector — if any pillar's numerical anchor
+  silently diverges from another (e.g. wormhole ANEC 1/τ ≠ warp QI 1/τ),
+  the entire n=6 closed-form claim fractures across pillars. This
+  script catches that drift recipe-wide.
+
+### Verified
+- `hexa run verify/numerics_cross_pillar.hexa` → 9/9 PASS.
+- `hexa run verify/lint_numerics.hexa` → 51/51 PASS (10 numerics scripts).
+- `hexa run verify/run_all.hexa` → 20/20 PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 16 (numerics_lattice_arithmetic; cross-cutter)
 
 ### Added (RSC iteration 16 — recipe §7.4 priority 8 cross-cutter)

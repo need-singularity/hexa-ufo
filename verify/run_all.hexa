@@ -27,6 +27,7 @@ let SCRIPTS: [str] = [
     "verify/lint_numerics.hexa",
     "verify/saturation_check.hexa",
     "verify/numerics_lattice_arithmetic.hexa",
+    "verify/numerics_cross_pillar.hexa",
 ]
 
 fn main() {

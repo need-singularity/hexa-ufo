@@ -67,6 +67,7 @@ hexa = [
     "verify/lint_numerics.hexa",
     "verify/saturation_check.hexa",
     "verify/numerics_lattice_arithmetic.hexa",
+    "verify/numerics_cross_pillar.hexa",
     "verify/run_all.hexa",
 ]
 docs = [
@@ -105,7 +106,7 @@ propulsion_stages_total = 7
 propulsion_stages_substrate_grounded = 7
 propulsion_stages_tbd = 0
 falsifiers_preregistered = 13
-verify_scripts = 19
+verify_scripts = 20
 rsc_saturated = "sat-1 + sat-2 + sat-3 (2026-05-09 · 17/17 saturation_check PASS · STOP signal)"
 verdict = "ATLAS_PASS_PROPULSION_FULL"
 extracted_from = "n6-architecture/domains/sf-ufo/ @ 2026-05-06 (SHA c0f1f570)"
