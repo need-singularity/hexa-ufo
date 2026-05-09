@@ -4,6 +4,55 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — 🛸 RSC iter 14 (lint_numerics; **sat-1 + sat-2 — loop self-terminates**)
+
+### Added (RSC iteration 14 — recipe §4 invariant meta-lint)
+- `verify/lint_numerics.hexa` — meta-lint enforcing recipe §4 invariants
+  for every `verify/numerics_*.hexa`: math_pure import + sentinel
+  prefix/suffix + FALSIFIERS array + exit(0) + RUN/FAIL counters,
+  plus drift-detector inventory check (NUMERICS_SCRIPTS array length ==
+  on-disk numerics_*.hexa glob count). 41/41 checks across 8 numerics
+  scripts (4 numerics_<p> + 4 numerics_<p>_parity). Sister of
+  hexa-cern/verify/lint_numerics.hexa.
+  Sentinel `__HEXA_UFO_LINT_NUMERICS__ PASS`.
+- Wired into `verify/run_all.hexa` (16 → 17) + `hexa.toml`
+  `[closure].verify_scripts` 16 → 17 + new `rsc_saturated` field.
+
+### 🛸🛸🛸 RSC LOOP TERMINATED — sat-1 + sat-2 BOTH MET 🛸🛸🛸
+
+#### sat-1 (saturation): all 13 falsifiers at 100% closure
+- F-WARP-{1..3}: T1 ✓ + T2 ✓ + T3 ✓ (Casimir/Lamoreaux/Bressi/Decca/PF/VDB)
+- F-WORM-{1..3}: T1 ✓ + T2 ✓ + T3 ✓ (MT/Ford-Roman/PF/Hawking/Visser)
+- F-DIM-{1..3}:  T1 ✓ + T2 ✓ + T3 ✓ (Kaluza/Klein/CHSW/RS/LHC/Eöt-Wash)
+- F-USE-{1..4}:  T1 ✓ + T2 ✓ + T3 ✓ (Hipparcos/Clausius/Alcubierre/CHSW)
+
+#### sat-2 (recipe-exhausted): 17 verify scripts + meta-lint passes
+- T1 algebraic (6): lattice_check + stages_cross_doc + 4 calc_<pillar>
+- T2 numerical (4): 4 numerics_<pillar>
+- T3 parity (4): 4 numerics_<pillar>_parity
+- Meta (2): stages_falsifier + lint_numerics
+- Cross-link (1): cross_link_upstream (선행도메인)
+- Aggregator (1): run_all
+
+Total verify scripts: **17** (recipe target ~16, +1 cross-link extension).
+Meta-lint compliance: **8/8 numerics scripts pass §4 invariant audit**.
+
+#### Closure path (13 iterations · single session, 2026-05-09)
+- iter 1-4: T1 algebraic per pillar (calc_warp/wormhole/dimjump/dimuse)
+- iter 5-8: T2 numerical per pillar (numerics_warp/wormhole/dimjump/dimuse)
+- iter 9-12: T3 parity per pillar (numerics_<p>_parity, archival empirical)
+- iter 13: 선행도메인 CLI cross-link (Stage-1/2/3 sister substrate wire)
+- iter 14: lint_numerics meta-lint (this commit)
+
+#### What's next (out of recipe scope per §9)
+- T4 (live hardware) — Stage-1+ benchtop builds, awaits 2150+ Mk.V
+- This loop's natural terminus is reached; further changes follow the
+  user's explicit direction (CI/CD, README polish, novel SF chapters).
+
+### Verified
+- `hexa run verify/run_all.hexa` → 17/17 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 13 (선행도메인 CLI cross-link)
 
 ### Added (RSC iteration 13 — Stage-1/2/3 upstream sister CLI cross-link)
