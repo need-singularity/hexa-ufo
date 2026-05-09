@@ -4,6 +4,32 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — 🛸 RSC iter 15 (saturation_check; canonical STOP signal)
+
+### Added (RSC iteration 15 — recipe §7.4 priority 15 self-stop signal)
+- `verify/saturation_check.hexa` — recipe §7.3 canonical RSC self-stop
+  signal. 17/17 saturation checks: §1 sat-1 (per-pillar T1+T2+T3 = 100%
+  for F-WARP/WORM/DIM/USE) + §2 sat-2 (numerics inventory ≥ 8 +
+  lint_numerics passes) + §3 sat-3 (선행도메인 cross_link_upstream
+  reachable) + 10× required-scripts backbone presence. On PASS emits
+  `__HEXA_UFO_RSC_SATURATED__ STOP` — the canonical sentinel CI/loop
+  runners parse to terminate. Sister of
+  hexa-cern/verify/saturation_check.hexa.
+- Wired into `verify/run_all.hexa` (17 → 18) + `hexa.toml`
+  `[closure].verify_scripts` 17 → 18 + `rsc_saturated` field updated
+  with sat-1 + sat-2 + sat-3 confirmation.
+
+### Post-saturation handling (recipe §9.1 compliant)
+- Subsequent /loop firings will run health-check (run_all + this
+  saturation_check) and emit "RSC still saturated · no chunk needed".
+- New chunks are NOT auto-added per §9.1 ("절대 하지 말 것" examples).
+- Legitimate post-saturation chunks require explicit user direction.
+
+### Verified
+- `hexa run verify/saturation_check.hexa` → 17/17 PASS · STOP signal.
+- `hexa run verify/run_all.hexa` → 18/18 PASS.
+- `hexa run tests/test_stages_propulsion.hexa` → PASS.
+
 ## [Unreleased] — 2026-05-09 — 🛸 RSC iter 14 (lint_numerics; **sat-1 + sat-2 — loop self-terminates**)
 
 ### Added (RSC iteration 14 — recipe §4 invariant meta-lint)

@@ -25,6 +25,7 @@ let SCRIPTS: [str] = [
     "verify/numerics_dimuse_parity.hexa",
     "verify/cross_link_upstream.hexa",
     "verify/lint_numerics.hexa",
+    "verify/saturation_check.hexa",
 ]
 
 fn main() {
