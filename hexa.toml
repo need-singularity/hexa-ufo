@@ -89,6 +89,7 @@ docs = [
     "docs/meta-closure-nav/meta-closure-nav.md",
     "docs/meta-closure-nav/sf-novel-six.md",
     "docs/meta-closure-nav/README.md",
+    "docs/numerics_methodology.md",
 ]
 
 # ── Dependencies ───────────────────────────────────────────

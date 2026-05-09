@@ -4,6 +4,25 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 23 (docs/numerics_methodology.md; reader's map)
+
+### Added (RSC iteration 23 — recipe priority 13 narrative)
+- `docs/numerics_methodology.md` — descriptive methodology doc covering
+  the 20-script verify surface as it stood after 22 RSC iterations.
+  10 sections: §1 why a methodology doc, §2 3-tier evidence ladder
+  (T1/T2/T3/T4), §3 per-pillar mapping (4 in-tree + 3 선행도메인), §4
+  five invariants enforced by lint_numerics, §5 cross-cutters
+  (lattice_arithmetic + cross_pillar), §6 saturation criteria,
+  §7 test layer (6 tests), §8 build infrastructure (Makefile + header.tex),
+  §9 honest C3 raw#10 disclaimer, §10 references.
+  Sister of hexa-cern/docs/numerics_methodology.md.
+- Wired into `hexa.toml [modules].docs`.
+
+### Why post-saturation
+- Recipe priority 13 narrative slot — provides the "reader's map" so
+  newcomers can understand "why are there 20 verify scripts and what
+  do they collectively claim?" without reading 20 file headers.
+
 ## [Unreleased] — 2026-05-09 — RSC iter 22 (build/Makefile + header.tex; PDF rebuild)
 
 ### Added (RSC iteration 22 — recipe §1 + priority 12 PDF build infrastructure)

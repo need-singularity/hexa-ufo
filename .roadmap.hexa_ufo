@@ -72,6 +72,7 @@ DoD:
 - **RSC iter 20 (2026-05-09)** — `tests/test_lattice.hexa` (recipe §1 lattice regression). Wraps `verify/lattice_check.hexa` with explicit per-test PASS contract. test_all CASES → 4/4. `hexa.toml [test].files` → 5 tests.
 - **RSC iter 21 (2026-05-09)** — `tests/test_cli_verify.hexa` (recipe §1 CLI surface regression). 4/4 checks: cli verify aggregate, cli status (propulsion + falsifiers), cli lattice --json (master holds), cli selftest. test_all → 5/5. `hexa.toml [test].files` → 6 tests.
 - **RSC iter 22 (2026-05-09)** — `build/Makefile` + `build/header.tex` (recipe §1 + priority 12 PDF rebuild). pandoc + xelatex pipeline for 5 PDFs (warp/wormhole/dimjump/dimuse + main atlas). `make check` → toolchain ready. `make warp` → 60KB PDF (Unicode glyph warnings non-fatal). build/out/ gitignored.
+- **RSC iter 23 (2026-05-09)** — `docs/numerics_methodology.md` (recipe priority 13 narrative). 10-section reader's map covering 3-tier evidence ladder, per-pillar mapping, lint invariants, cross-cutters, saturation criteria, test layer, build infrastructure, honest C3 disclaimer. Wired into `hexa.toml [modules].docs`. **Recipe §1 16-script standard fully exhausted + extended to 20 verify + 6 tests + build + docs.**
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 
