@@ -70,6 +70,8 @@ DoD:
 - **RSC iter 18 (2026-05-09)** — `tests/test_calculators.hexa` (recipe §1 test layer expansion, priority 11). 20/20 (filename, sentinel) regressions across full RSC surface (T1+T2+T3+cross-cutters+meta+선행도메인). 5-min timeout per case with SKIP-on-timeout (exit=124). Wired into `hexa.toml [test].files`.
 - **RSC iter 19 (2026-05-09)** — `tests/test_all.hexa` (recipe §1 top-level test aggregator). 3/3 sub-tests PASS (atlas + stages_propulsion + calculators). Fixed test_stages_propulsion.hexa to use `.hx/packages/hexa/hexa.real` direct path + touch `~/.resource-off` prefix → bypasses alias→TCP race when called from outer test wrapper. Wired into `hexa.toml [test].files` (4 tests total).
 - **RSC iter 20 (2026-05-09)** — `tests/test_lattice.hexa` (recipe §1 lattice regression). Wraps `verify/lattice_check.hexa` with explicit per-test PASS contract. test_all CASES → 4/4. `hexa.toml [test].files` → 5 tests.
+- **RSC iter 21 (2026-05-09)** — `tests/test_cli_verify.hexa` (recipe §1 CLI surface regression). 4/4 checks: cli verify aggregate, cli status (propulsion + falsifiers), cli lattice --json (master holds), cli selftest. test_all → 5/5. `hexa.toml [test].files` → 6 tests.
+- **RSC iter 22 (2026-05-09)** — `build/Makefile` + `build/header.tex` (recipe §1 + priority 12 PDF rebuild). pandoc + xelatex pipeline for 5 PDFs (warp/wormhole/dimjump/dimuse + main atlas). `make check` → toolchain ready. `make warp` → 60KB PDF (Unicode glyph warnings non-fatal). build/out/ gitignored.
 
 ## §A.4 Falsifier preregister (UFO-level meta)
 

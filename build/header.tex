@@ -1,0 +1,37 @@
+% hexa-ufo/build/header.tex — pandoc xelatex include-in-header.
+%
+% Conservative: only load packages confirmed present on the build host.
+% Each block is wrapped in \IfFileExists{...} so the build degrades to a
+% plain pandoc-default look rather than aborting on missing optional pkgs.
+%
+% Sister of hexa-cern/build/header.tex.
+
+% Monospace font with broader Unicode coverage for ASCII-art tables
+% (UFO atlas docs use heavy box-drawing chars in ladder + lattice).
+\IfFileExists{fontspec.sty}{%
+  \usepackage{fontspec}
+  \IfFontExistsTF{Menlo}{%
+    \setmonofont[Scale=0.85]{Menlo}
+  }{}%
+}{}
+
+% Optional CJK support — silently skipped if xeCJK not installed.
+% UFO docs interleave Korean ("선행도메인" labels, SF-novel chapter
+% titles, status quotes) — needs CJK glyph coverage.
+\IfFileExists{xeCJK.sty}{%
+  \usepackage{xeCJK}
+  \setCJKmainfont{Apple SD Gothic Neo}
+}{}
+
+% Optional: tighter section spacing.
+\IfFileExists{titlesec.sty}{%
+  \usepackage{titlesec}
+  \titlespacing*{\section}{0pt}{1.2ex}{0.6ex}
+  \titlespacing*{\subsection}{0pt}{0.9ex}{0.4ex}
+}{}
+
+% Code-block coloring (xcolor + fancyvrb both ship with TeXLive default).
+\IfFileExists{xcolor.sty}{%
+  \usepackage{xcolor}
+  \definecolor{codebg}{RGB}{248, 248, 248}
+}{}

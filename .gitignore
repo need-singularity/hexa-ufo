@@ -10,3 +10,5 @@ state/*
 # build / temp output
 /tmp/
 *.out
+build/out/
+

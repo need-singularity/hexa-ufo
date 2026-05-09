@@ -4,6 +4,26 @@ All notable changes to `hexa-ufo` will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — 2026-05-09 — RSC iter 22 (build/Makefile + header.tex; PDF rebuild)
+
+### Added (RSC iteration 22 — recipe §1 + priority 12 PDF build infrastructure)
+- `build/Makefile` — pandoc + xelatex pipeline for 5 spec PDFs:
+  hexa-warp (Stage-4) / hexa-wormhole (Stage-5) / hexa-dimjump (Stage-6)
+  / hexa-dimuse (Stage-7) / hexa-ufo main atlas. Targets: `make all` /
+  `make warp` / `make wormhole` / `make dimjump` / `make dimuse` /
+  `make atlas` / `make verify` (cross-link to verify pipeline) /
+  `make check` (toolchain probe) / `make clean` / `make size`.
+- `build/header.tex` — pandoc xelatex include-in-header. Soft-guarded
+  with `\IfFileExists{}` for fontspec, xeCJK (Korean labels in UFO docs:
+  "선행도메인", SF-novel chapter titles), titlesec, xcolor. Build host
+  without optional packages produces clean ASCII-only PDF.
+- `.gitignore`: `build/out/` directory excluded (PDF artifacts).
+
+### Verified
+- `make check` → pandoc 3.9.0.2 + XeTeX 3.141592653 + hexa 0.1.0-dispatch.
+- `make warp` → 60 KB PDF generated (warnings only on missing Unicode
+  glyphs ℏ/δ/σ/ℓ — non-fatal, ASCII fallback).
+
 ## [Unreleased] — 2026-05-09 — RSC iter 21 (test_cli_verify; CLI surface regression)
 
 ### Added (RSC iteration 21 — recipe §1 test_cli_verify)
