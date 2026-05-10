@@ -14,6 +14,7 @@
 > layer including 𝔚**. See [`docs/meta-closure-nav/`](docs/meta-closure-nav/README.md)
 > for the canonical reference + SF-소설 입문서.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20102628.svg)](https://doi.org/10.5281/zenodo.20102628)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 10 DOC](https://img.shields.io/badge/verbs-10_DOC-blue.svg)](#verbs)
