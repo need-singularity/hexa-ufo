@@ -1,3 +1,6 @@
+<!-- @canonical: canon@ded52144:domains/sf-ufo/cross-domain-mega/cross-domain-mega.md -->
+<!-- @extracted: 2026-05-10 -->
+<!-- @md5_at_extraction: 33254d0284ff62bc5701788e3f91b51d -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: cross-domain-mega

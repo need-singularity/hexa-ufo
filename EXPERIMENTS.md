@@ -1,3 +1,6 @@
+<!-- @canonical: canon@ded52144:domains/sf-ufo/experiments/experiments.md -->
+<!-- @extracted: 2026-05-10 -->
+<!-- @md5_at_extraction: 081b1cc404162262d5352da157404432 -->
 <!-- gold-standard: shared/harness/sample.md -->
 ---
 domain: experiments
