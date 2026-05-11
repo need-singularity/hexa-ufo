@@ -141,47 +141,28 @@ Silent retract is forbidden. See `.roadmap.hexa_ufo` §B for the canonical table
 ### Via `hx` (recommended)
 
 ```bash
+# Install hexa-lang (ships `hexa` + `hx` package manager)
+curl -fsSL https://raw.githubusercontent.com/dancinlab/hexa-lang/main/install.sh | bash
+
+# Install hexa-ufo
 hx install hexa-ufo          # global, pulls latest from registry
 hx install hexa-ufo@1.0.0    # pin specific version
-hexa-ufo --version           # → 1.0.0
+hexa-ufo --version
 ```
 
-### Via git clone (works today)
+`hx install hexa-ufo` pulls from <https://github.com/dancinlab/hexa-ufo> and
+installs the standalone CLI under `$HX_HOME/bin/hexa-ufo`. The hexa-lang
+package registry resolves any cross-substrate dependencies declared in
+`hexa.toml`.
 
-```bash
-git clone https://github.com/dancinlab/hexa-ufo.git ~/.hexa-ufo
-export HEXA_UFO_ROOT=~/.hexa-ufo
-export PATH="$HEXA_UFO_ROOT/cli:$PATH"
+### Optional deps
 
-# Run any subcommand:
-hexa run $HEXA_UFO_ROOT/cli/hexa-ufo.hexa selftest
-hexa run $HEXA_UFO_ROOT/cli/hexa-ufo.hexa status
-hexa run $HEXA_UFO_ROOT/cli/hexa-ufo.hexa ufo
-```
-
-No Python deps. No network. Pure-hexa atlas browser.
+`hexa-ufo` is **pure hexa-lang stdlib** — zero Python deps, zero external.
+All default subcommands run with `hx install hexa-ufo` alone. Cross-substrate
+extras (e.g. `qmirror` for ANU-QRNG + Aer state-vector simulator) are
+auto-resolved by `hx install` when declared in `hexa.toml`.
 
 ---
-
-## Cross-link
-
-`hexa-ufo` is the **substrate-atlas hub**. Stage-1~3 substrates live in
-4 sister `dancinlab` repos; Stage-4~7 substrates are **in-tree** at
-this repo (medium integration 2026-05-07):
-
-| Stage   | Substrate                                | Location                                                          |
-|---------|------------------------------------------|-------------------------------------------------------------------|
-| Stage-1 | RT-SC Meissner 48T coil                  | sister: <https://github.com/dancinlab/hexa-rtsc>           |
-| Stage-2 | tabletop D-T / p-11B fusion              | sister: <https://github.com/dancinlab/hexa-fusion>         |
-| Stage-3 | antimatter (anti-H) propulsion fuel      | sister: <https://github.com/dancinlab/hexa-antimatter>     |
-| Stage-3 aux | onboard sigma-cascade accelerator    | sister: <https://github.com/dancinlab/hexa-cern>           |
-| Stage-4 | Alcubierre warp metric (BT-347)          | in-tree: `warp/hexa-warp.md`                                      |
-| Stage-5 | Morris-Thorne traversable wormhole       | in-tree: `wormhole/hexa-wormhole.md`                              |
-| Stage-6 | KK ladder extra-dim compactification (BT-348) | in-tree: `dimjump/hexa-dimjump.md`                           |
-| Stage-7 | τ=4 (σ−φ)²=100c composite (BT-349)       | in-tree: `dimuse/hexa-dimuse.md` (composite-of warp + dimjump)    |
-
----
-
 ## Architecture
 
 ```
