@@ -19,6 +19,8 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](CHANGELOG.md)
 [![Verbs: 10 DOC](https://img.shields.io/badge/verbs-10_DOC-blue.svg)](#verbs)
 [![Propulsion: 7/7 grounded](https://img.shields.io/badge/propulsion-7%2F7_substrate--grounded-brightgreen.svg)](#status)
+[![Verify: 20/20](https://img.shields.io/badge/verify-20%2F20_PASS-brightgreen.svg)](verify/run_all.hexa)
+[![Closure: 100%](https://img.shields.io/badge/closure-100%25_bookkeeping-brightgreen.svg)](#verification)
 [![Falsifiers: 13](https://img.shields.io/badge/falsifiers-13_OPEN-orange.svg)](.roadmap.hexa_ufo)
 [![alien_index](https://img.shields.io/badge/alien__index-%F0%9F%9B%B86_to_%F0%9F%9B%B8ABSOLUTE_%3D_%F0%9D%94%9A-purple.svg)](docs/meta-closure-nav/README.md)
 
@@ -61,16 +63,35 @@ scope is two-tier:
 
 1. **Atlas tier (selftest)**: 10 verbs present + 484-tier `L(k)=24^(k-15)`
    lattice arithmetic sanity (`L(15)=1`, `L(16)=24`, `L(17)=576`).
-2. **Substrate tier (verify/run_all)**: 3 invariant audits across `verify/`:
-   - `verify/lattice_check.hexa` — n=6 master identity (σ·φ ≡ n·τ ≡ 24)
-   - `verify/stages_cross_doc.hexa` — Stage-4~7 spec ↔ cli ↔ roadmap token agreement
-   - `verify/stages_falsifier.hexa` — 13 falsifier IDs × 3 surfaces (spec / cli / roadmap)
+2. **Substrate tier (verify/run_all)**: 20 invariant audits across `verify/`,
+   organised as T1 algebraic + T2 numerical + T3 archival-empirical-parity +
+   meta cross-cutters (per `docs/numerics_methodology.md`):
+   - **T1 algebraic** (7): `lattice_check` · `stages_cross_doc` ·
+     `stages_falsifier` · `calc_warp` · `calc_wormhole` · `calc_dimjump` ·
+     `calc_dimuse`
+   - **T2 numerical** (4): `numerics_warp` · `numerics_wormhole` ·
+     `numerics_dimjump` · `numerics_dimuse`
+   - **T3 archival-parity** (4): `numerics_*_parity` for each pillar
+     (Casimir 1948 / Morris-Thorne 1988 / Kaluza-Klein / Bessel 1838 etc.)
+   - **Cross-cutters + meta** (5): `numerics_lattice_arithmetic` ·
+     `numerics_cross_pillar` · `cross_link_upstream` · `lint_numerics` ·
+     `saturation_check`
 
 ```bash
-hexa run verify/run_all.hexa       # 3/3 scripts PASS
+hexa run verify/run_all.hexa       # 20/20 scripts PASS (bookkeeping closure)
 hexa run cli/hexa-ufo.hexa verify  # equivalent (CLI wrapper)
-hexa run tests/test_stages_propulsion.hexa  # rolls up all 3 + selftest
+hexa run tests/test_stages_propulsion.hexa  # roll-up: run_all + selftest + lattice
 ```
+
+**Bookkeeping closure 100 %** — 20/20 verify scripts return PASS via
+`verify/run_all.hexa`. All 13 falsifier IDs (F-WARP/F-WORM/F-DIM/F-USE)
+are preregistered across roadmap + CLI + per-stage spec surfaces, with
+status set restricted to `{OPEN, CONFIRMED, DEMOTED}` (monotone — no
+silent retract). This certifies that the closed-form n=6 lattice
+machinery + token surfaces are **regression-locked at the code-layer**.
+It does **not** certify empirical Alcubierre / Morris-Thorne /
+Kaluza-Klein / composite-cycle truth — those remain academically
+UNPROVEN at v1.0.0 (see [Status](#status-raw10-honest-c3)).
 
 What is **not** verified:
 
@@ -158,20 +179,32 @@ hexa-ufo help            # full --help (subcommands + env vars)
 ├── wormhole/hexa-wormhole.md        # Stage-5 Morris-Thorne (in-tree, F-WORM-{1..3})
 ├── dimjump/hexa-dimjump.md          # Stage-6 KK ladder 4D→26D (in-tree, F-DIM-{1..3})
 ├── dimuse/hexa-dimuse.md            # Stage-7 (σ−φ)²=100c composite (in-tree, F-USE-{1..4})
-├── verify/
-│   ├── lattice_check.hexa           # n=6 master identity (10 PASS)
-│   ├── stages_cross_doc.hexa        # Stage-4~7 spec ↔ cli ↔ roadmap (19 PASS)
-│   ├── stages_falsifier.hexa        # 13 falsifier IDs × 3 surfaces (45 PASS)
-│   └── run_all.hexa                 # orchestrator (3/3 scripts PASS)
+├── verify/                          # 20 scripts (T1×7 + T2×4 + T3×4 + cross-cut×5)
+│   ├── lattice_check.hexa           # n=6 master identity (10/10 PASS)
+│   ├── stages_cross_doc.hexa        # Stage-4~7 spec ↔ cli ↔ roadmap (19/19)
+│   ├── stages_falsifier.hexa       # 13 falsifier IDs × 3 surfaces (45/45)
+│   ├── calc_{warp,wormhole,dimjump,dimuse}.hexa     # T1 algebraic per pillar
+│   ├── numerics_{warp,wormhole,dimjump,dimuse}.hexa # T2 SI numerical bridge
+│   ├── numerics_*_parity.hexa       # T3 archival empirical parity (4 pillars)
+│   ├── numerics_lattice_arithmetic.hexa  # sub-1e-9 math_pure precision
+│   ├── numerics_cross_pillar.hexa   # sub-1e-12 cross-pillar anchors
+│   ├── cross_link_upstream.hexa    # Stage-1/2/3 sister CLI cross-link
+│   ├── lint_numerics.hexa           # 41/41 invariant meta-lint
+│   ├── saturation_check.hexa        # RSC saturation signal
+│   └── run_all.hexa                 # orchestrator (20/20 scripts PASS)
 ├── docs/
 │   ├── cross-domain-mega/           # cross-domain integration notes
 │   ├── hypotheses/                  # hypotheses preregister
 │   ├── experiments/                 # experiment notes
 │   ├── rtsc-12-products-evolution/  # RT-SC product evolution table
 │   └── meta-closure-nav/            # 🛸16 meta² → 🛸∞⁴ → 🛸ULTRA → 🛸CARD → 🛸BEYOND → 🛸ABSOLUTE = 𝔚 chain ref + SF-소설 입문서
-├── tests/
+├── tests/                           # 6 test wrappers (regression layer)
 │   ├── test_atlas_consistency.hexa  # 10-verb count + L(k) arithmetic
-│   └── test_stages_propulsion.hexa  # Stage-4~7 verify+selftest+lattice rollup
+│   ├── test_stages_propulsion.hexa  # Stage-4~7 verify+selftest+lattice rollup
+│   ├── test_calculators.hexa        # 20-script regression sweep (T1+T2+T3+meta)
+│   ├── test_lattice.hexa            # n=6 lattice closure regression
+│   ├── test_cli_verify.hexa         # CLI surface regression (verify/status/lattice/selftest)
+│   └── test_all.hexa                # top-level test aggregator
 ├── examples/
 │   └── propulsion_stack.md          # 7-stage evolution table
 ├── .roadmap.hexa_ufo                # §A meta + §B Stage-4~7 13-falsifier preregister
