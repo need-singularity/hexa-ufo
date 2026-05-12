@@ -138,29 +138,34 @@ Silent retract is forbidden. See `.roadmap.hexa_ufo` §B for the canonical table
 
 ## Install
 
-### Via `hx` (recommended)
-
 ```bash
-# Install hexa-lang (ships `hexa` + `hx` package manager)
-curl -fsSL https://raw.githubusercontent.com/dancinlab/hexa-lang/main/install.sh | bash
+# 1. Install hexa-lang (ships `hexa` + `hx` package manager)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dancinlab/hexa-lang/main/install.sh)"
 
-# Install hexa-ufo
+# 2. Install hexa-ufo
 hx install hexa-ufo          # global, pulls latest from registry
-hx install hexa-ufo@1.0.0    # pin specific version
-hexa-ufo --version
 ```
 
-`hx install hexa-ufo` pulls from <https://github.com/dancinlab/hexa-ufo> and
-installs the standalone CLI under `$HX_HOME/bin/hexa-ufo`. The hexa-lang
-package registry resolves any cross-substrate dependencies declared in
-`hexa.toml`.
+## Run
 
-### Optional deps
-
-`hexa-ufo` is **pure hexa-lang stdlib** — zero Python deps, zero external.
-All default subcommands run with `hx install hexa-ufo` alone. Cross-substrate
-extras (e.g. `qmirror` for ANU-QRNG + Aer state-vector simulator) are
-auto-resolved by `hx install` when declared in `hexa.toml`.
+```bash
+hexa-ufo ufo             # main atlas (1890-LOC narrative + 484-tier L(k)=24^(k-15))
+hexa-ufo grav            # Stage-1 substrate: Meissner gravitomagnetic levitation
+hexa-ufo hover           # Stage-1/2 substrate: hover / VTOL primitive
+hexa-ufo cloak           # optical / RF / thermal cloaking
+hexa-ufo teleport        # Stage-5/6 substrate: wormhole / quantum-teleport
+hexa-ufo sim             # airframe / cross-domain simulation
+hexa-ufo warp            # Stage-4 substrate: Alcubierre 1994 bubble (in-tree, F-WARP-{1..3})
+hexa-ufo wormhole        # Stage-5 substrate: Morris-Thorne 1988 (in-tree, F-WORM-{1..3})
+hexa-ufo dimjump         # Stage-6 substrate: Calabi-Yau 4D→26D KK (in-tree, F-DIM-{1..3})
+hexa-ufo dimuse          # Stage-7 composite: τ=4 (σ−φ)²=100c (in-tree, F-USE-{1..4})
+hexa-ufo status          # propulsion-stage substrate table + caveats
+hexa-ufo selftest        # atlas-consistency check (verb count + lattice arithmetic)
+hexa-ufo lattice         # live n=6 master identity (σ τ φ Hc2)
+hexa-ufo verify          # run verify/*.hexa with aggregate verdict
+hexa-ufo version         # print version
+hexa-ufo help            # full --help (subcommands + env vars)
+```
 
 ---
 ## Architecture
