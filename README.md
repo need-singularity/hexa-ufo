@@ -54,37 +54,6 @@ PASS validates lattice arithmetic + token consistency, NOT empirical apparatus.
 
 ---
 
-## Verbs
-
-`hexa-ufo` exposes **10 verbs**, all DOC-grade in v1.0.0:
-
-| Verb        | Status | Cross-link / role                                                       |
-|-------------|--------|-------------------------------------------------------------------------|
-| `ufo`       | DOC    | main atlas (484-tier `L(k)=24^(k-15)` indexing convention)              |
-| `grav`      | DOC    | Stage-1 substrate: Meissner gravitomagnetic levitation                  |
-| `hover`     | DOC    | Stage-1/2 substrate: hover / VTOL primitive                             |
-| `cloak`     | DOC    | optical / RF / thermal cloaking                                         |
-| `teleport`  | DOC    | Stage-5/6 substrate: wormhole / quantum-teleport                        |
-| `sim`       | DOC    | airframe / cross-domain simulation                                      |
-| `warp`      | DOC    | **Stage-4** Alcubierre 1994 (in-tree, F-WARP-{1..3})                    |
-| `wormhole`  | DOC    | **Stage-5** Morris-Thorne 1988 traversable WH (in-tree, F-WORM-{1..3})  |
-| `dimjump`   | DOC    | **Stage-6** Calabi-Yau 4D→26D KK ladder (in-tree, F-DIM-{1..3})         |
-| `dimuse`    | DOC    | **Stage-7** τ=4 (σ−φ)²=100c composite (in-tree, F-USE-{1..4})           |
-
-Plus utility subcmds: `status`, `selftest`, `lattice`, `verify`, `help`, `--version`.
-
-```bash
-hexa-ufo ufo        # main atlas head
-hexa-ufo warp       # Stage-4 Alcubierre spec head
-hexa-ufo dimuse     # Stage-7 composite spec head
-hexa-ufo lattice    # live n=6 master identity (σ τ φ Hc2)
-hexa-ufo verify     # run verify/*.hexa (lattice + cross_doc + falsifier)
-hexa-ufo status     # propulsion-stage substrate table
-hexa-ufo selftest   # 10-verb-count + lattice arithmetic sanity
-```
-
----
-
 ## Verification
 
 `hexa-ufo` is an **atlas browser + 7-stage substrate registry** — verification
