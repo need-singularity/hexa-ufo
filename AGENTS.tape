@@ -46,7 +46,7 @@
 @I id001 := "hexa-ufo" :: identity-claim [d=2026-05-14 active]
   kind = "HEXA-Disc family — UFO · RT-SC VTOL"
   brief = "HEXA-Disc family · UFO · RT-SC VTOL · alien-index 6→500 propulsion ladder"
-  parent = "dancinlab/echoes"
+  parent = "dancinlab"
 
 @L l1 := "repo-layout" :: structure [active]
   .roadmap.hexa_ufo -> "file"
