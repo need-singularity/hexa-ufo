@@ -14,7 +14,6 @@ versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   five invariants enforced by lint_numerics, §5 cross-cutters
   (lattice_arithmetic + cross_pillar), §6 saturation criteria,
   §7 test layer (6 tests), §8 build infrastructure (Makefile + header.tex),
-  §9 honest C3 raw#10 disclaimer, §10 references.
   Sister of hexa-cern/docs/numerics_methodology.md.
 - Wired into `hexa.toml [modules].docs`.
 

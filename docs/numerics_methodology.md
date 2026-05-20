@@ -187,7 +187,6 @@ before publishing PDFs.
 
 ---
 
-## §9 Honest C3 (raw#10 disclaimer)
 
 > **The verify surface validates the n=6 closed-form lattice + spec-doc
 > anchors + published-data parity — it does NOT validate empirical

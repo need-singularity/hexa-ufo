@@ -186,7 +186,6 @@ Per `.own` own 2: F-WORM-{1,2,3} are MONOTONE — they flip
    under linear perturbations._ (and related literature on φ-channel
    stability.)
 
-## §11 Honest scope (raw#10 C3)
 
 - The Morris-Thorne metric is **mathematically consistent** within general
   relativity. The SPEC presented here is a faithful encoding, with n=6

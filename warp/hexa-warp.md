@@ -4,7 +4,6 @@
 > `canon/domains/sf-ufo/ufo/doc/warp-dimension-design.md`
 > (canonical SHA `0570a835`, BT-347 row).
 >
-> **Honest status (raw#10 C3)**: Alcubierre 1994 metric is mathematically
 > well-defined but requires NEC-violating negative energy density. ANEC
 > theorems impose strict constraints. No demonstrated controllable warp
 > drive exists. This v1.0.0 release ships a **closed-form n=6 candidate

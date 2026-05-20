@@ -154,7 +154,6 @@ Mk.V 2150+.
 
 ---
 
-## §9. Honest C3 (raw#10 — UNPROVEN^2)
 
 > 1. **(sentinel only — does NOT validate empirical composite Warp+Dim-Jump claim)**
 > 2. **(UNPROVEN^2 — both upstream substrates hexa-warp and hexa-dimjump are themselves UNPROVEN)**

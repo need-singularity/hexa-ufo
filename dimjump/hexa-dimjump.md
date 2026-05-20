@@ -6,7 +6,6 @@
 
 ---
 
-## §0 Status (raw#10 honest C3)
 
 > **Empirical claim is UNPROVEN.** Extra dimensions remain experimentally
 > **unobserved** as of 2026:

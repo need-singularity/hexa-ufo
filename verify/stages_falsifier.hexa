@@ -4,7 +4,6 @@
 // Verifies the 13 falsifier IDs (F-WARP-{1,2,3} + F-WORM-{1,2,3} +
 // F-DIM-{1,2,3} + F-USE-{1,2,3,4}) appear in:
 //   1. .roadmap.hexa_ufo §B (canonical SSOT — all 13 in one table set)
-//   2. cli/hexa-ufo.hexa (raw#10 honest C3 surface — 13 IDs in status output)
 //   3. The owning per-stage spec doc:
 //        F-WARP-* → warp/hexa-warp.md
 //        F-WORM-* → wormhole/hexa-wormhole.md
